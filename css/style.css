@@ -5,12 +5,14 @@
 
 header{
     height: 15vh;
-    background-color: #F77B7B;
+    background-color: #f76c6c;
     display: flex;
     justify-content: center;
     align-items: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-}   
+} 
+
 h1{
 
 color: #ffffff;
