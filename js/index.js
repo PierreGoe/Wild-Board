@@ -1,5 +1,6 @@
 const wildersInfos = [
-  {
+  { 
+    id: 1,
     name: "Mona Lisa",
     age: "19",
     birthday: "",
@@ -13,7 +14,8 @@ const wildersInfos = [
       cvUser: "lien cv",
     },
   },
-  {
+  { 
+    id: 2,
     name: "Mona Lisa",
     age: "19",
     birthday: "",
@@ -27,7 +29,8 @@ const wildersInfos = [
       cvUser: "lien cv",
     },
   },
-  {
+  { 
+    id: 3,
     name: "Mona Lisa",
     age: "19",
     birthday: "",
@@ -41,7 +44,8 @@ const wildersInfos = [
       cvUser: "lien cv",
     },
   },
-  {
+  { 
+    id: 4,
     name: "Mona Lisa",
     age: "19",
     birthday: "",
@@ -55,7 +59,8 @@ const wildersInfos = [
       cvUser: "lien cv",
     },
   },
-  {
+  { 
+    id: 5,
     name: "Mona Lisa",
     age: "19",
     birthday: "",
@@ -69,8 +74,9 @@ const wildersInfos = [
       cvUser: "lien cv",
     },
   },
-  {
-    name: "Mona",
+  { 
+    id: 6,
+    name: "Mona Lisa",
     age: "19",
     birthday: "",
     pets: false,
@@ -83,9 +89,10 @@ const wildersInfos = [
       cvUser: "lien cv",
     },
   },
+  
 ];
 
-function createWildersCard(name) {
+function createWildersCard(name, id) {
   const cardContainer = document.querySelector(".card-container");
 
   const cardBody = document.createElement("article");
@@ -94,9 +101,9 @@ function createWildersCard(name) {
 
   const cardFront = document.createElement("div");
   cardFront.setAttribute("class", "front");
-  // content to add
 
 
+  // content to add Front Side
   const cardImage = document.createElement('img')
   cardImage.setAttribute('src', "source/image/pictureUser1.jpg")
   cardImage.setAttribute('class', "pictureProfil")
@@ -112,17 +119,23 @@ function createWildersCard(name) {
   
   const cardBack = document.createElement("div");
   cardBack.setAttribute("class", "back");
-  // content to add
+
+
+  // content to add Back Side
   cardBody.appendChild(cardBack);
   const backTitle = document.createElement("h2");
   backTitle.textContent = name;
   cardBack.appendChild(backTitle);
+  const btnBackCard = document.createElement("button")
+  btnBackCard.setAttribute("id", `btnProfile${id}`)
+  cardBack.appendChild(btnBackCard)  
+
 
   
 }
 
 for (let i = 0; i < wildersInfos.length; i++) {
-    createWildersCard(wildersInfos[i].name);
+    createWildersCard(wildersInfos[i].name, wildersInfos[i].id);
     console.log[i];
 }
 
