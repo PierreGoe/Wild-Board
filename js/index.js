@@ -1,23 +1,123 @@
-const card = document.querySelector(".card");
+const wildersInfos = [
+  {
+    name: "Mona Lisa",
+    age: "19",
+    birthday: "",
+    pets: false,
+    nameOfPets: "",
+    favoritFood: "",
+    wildSide: "",
+    social: {
+      linkedin: "lien Linkedin",
+      gitHub: "lien gitHub",
+      cvUser: "lien cv",
+    },
+  },
+  {
+    name: "Mona Lisa",
+    age: "19",
+    birthday: "",
+    pets: false,
+    nameOfPets: "",
+    favoritFood: "",
+    wildSide: "",
+    social: {
+      linkedin: "lien Linkedin",
+      gitHub: "lien gitHub",
+      cvUser: "lien cv",
+    },
+  },
+  {
+    name: "Mona Lisa",
+    age: "19",
+    birthday: "",
+    pets: false,
+    nameOfPets: "",
+    favoritFood: "",
+    wildSide: "",
+    social: {
+      linkedin: "lien Linkedin",
+      gitHub: "lien gitHub",
+      cvUser: "lien cv",
+    },
+  },
+  {
+    name: "Mona Lisa",
+    age: "19",
+    birthday: "",
+    pets: false,
+    nameOfPets: "",
+    favoritFood: "",
+    wildSide: "",
+    social: {
+      linkedin: "lien Linkedin",
+      gitHub: "lien gitHub",
+      cvUser: "lien cv",
+    },
+  },
+  {
+    name: "Mona Lisa",
+    age: "19",
+    birthday: "",
+    pets: false,
+    nameOfPets: "",
+    favoritFood: "",
+    wildSide: "",
+    social: {
+      linkedin: "lien Linkedin",
+      gitHub: "lien gitHub",
+      cvUser: "lien cv",
+    },
+  },
+  {
+    name: "Mona",
+    age: "19",
+    birthday: "",
+    pets: false,
+    nameOfPets: "",
+    favoritFood: "",
+    wildSide: "",
+    social: {
+      linkedin: "lien Linkedin",
+      gitHub: "lien gitHub",
+      cvUser: "lien cv",
+    },
+  },
+];
 
-card.addEventListener("click", flipCard);
+function createWildersCard(name) {
+  const cardContainer = document.querySelector(".card-container");
 
-function flipCard() {
-    card.classList.toggle("flipCard");
+  const cardBody = document.createElement("article");
+  cardBody.setAttribute("class", "card");
+  cardContainer.appendChild(cardBody);
+
+  const cardFront = document.createElement("div");
+  cardFront.setAttribute("class", "front");
+  // content to add
+  cardBody.appendChild(cardFront);
+  const fontTitle = document.createElement("h2");
+  fontTitle.textContent = name;
+  cardFront.appendChild(fontTitle);
+
+  const cardBack = document.createElement("div");
+  cardBack.setAttribute("class", "back");
+  // content to add
+  cardBody.appendChild(cardBack);
+  const backTitle = document.createElement("h2");
+  backTitle.textContent = name;
+  cardBack.appendChild(backTitle);
 }
 
-const cardContainer = document.querySelector("card-container");
+for (let i = 0; i < wildersInfos.length; i++) {
+  createWildersCard(wildersInfos[i].name);
+  console.log[i];
+}
 
-const cardBody = document.createElement("article");
-cardBody.setAttribute("class", "card");
-cardContainer.appendChild(cardBody);
+const card = document.querySelectorAll(".card");
 
-const cardFront = document.createElement("div");
-cardFront.setAttribute("class", "front");
-// content to add
-cardBody.appendChild(cardFront);
+card.forEach(addEventListener("click", flipCard));
 
-const cardBack = document.createElement("div");
-cardBack.setAttribute("class", "back");
-// content to add
-cardBody.appendChild(cardBack);
+function flipCard() {
+  card.classList.toggle("flipCard");
+}
