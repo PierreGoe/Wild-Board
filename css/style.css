@@ -1,3 +1,10 @@
+:root{
+    --radiusCard: 5%;
+}
+
+
+
+
 .card  {
     height: 200px;
     width: 200px;
@@ -8,6 +15,10 @@
     align-content: space-between;
     margin: auto;
     margin-top: 3em;
+
+  
+    
+
     
     
 }
@@ -85,6 +96,21 @@ line-height: 42px;
 .pictureProfil{
     width: 200px;
     height: 80%;
+ 
     
     
+}
+.front, .card,.back{
+    border-radius: var(--radiusCard);
+}
+.pictureProfil{
+    border-radius: var(--radiusCard) var(--radiusCard) 0 0;
+}
+
+
+.btn{
+    background-color: coral;
+    height: 30px;
+    width: 60px;
+    z-index: 10;
 }
