@@ -2,3 +2,27 @@
     background-color: aqua;
     height: 200px;
 }
+
+header{
+    height: 15vh;
+    background-color: #F77B7B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}   
+h1{
+
+color: #ffffff;
+font-family: Raleway;
+font-style: normal;
+font-size: 36px;
+line-height: 42px;
+/* text-align: center; */
+
+
+}
+
+.logo  {
+    height: 100%;
+}
