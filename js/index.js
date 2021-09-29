@@ -137,3 +137,19 @@ for (let i = 0; i < cards.length; i++){
     }
 }
 
+
+
+
+// Modal
+const modal = document.querySelector("#modalUserProfile");
+const btn = document.querySelector("#btnProfile");
+const span = document.querySelector(".close");
+btn.addEventListener('click', function(){
+    modal.style.display = "block";
+});
+span.addEventListener('click', function(){
+    modal.style.display = "none";
+});
+modal.addEventListener('click', function(){
+    modal.style.display = "none";
+});
