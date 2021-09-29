@@ -95,11 +95,21 @@ function createWildersCard(name) {
   const cardFront = document.createElement("div");
   cardFront.setAttribute("class", "front");
   // content to add
+
+
+  const cardImage = document.createElement('img')
+  cardImage.setAttribute('src', "source/image/pictureUser1.jpg")
+  cardImage.setAttribute('class', "pictureProfil")
+  cardFront.appendChild(cardImage) 
+
+
   cardBody.appendChild(cardFront);
   const fontTitle = document.createElement("h2");
   fontTitle.textContent = name;
   cardFront.appendChild(fontTitle);
 
+  
+  
   const cardBack = document.createElement("div");
   cardBack.setAttribute("class", "back");
   // content to add
@@ -107,6 +117,8 @@ function createWildersCard(name) {
   const backTitle = document.createElement("h2");
   backTitle.textContent = name;
   cardBack.appendChild(backTitle);
+
+  
 }
 
 for (let i = 0; i < wildersInfos.length; i++) {
