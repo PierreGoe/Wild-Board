@@ -1,7 +1,12 @@
 const wildersInfos = [{
   name: "Benoît",
   lastname: "Zenone",
-  age: "19",
+  age: function () {
+    let diff = Date.now() - this.calcAge.getTime();
+    let age = new Date(diff);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  },
+  calcAge: new Date(1980, 7, 4),
   birthday: "45/05/3907",
   pets: false,
   nameOfPets: "lili",
@@ -20,7 +25,12 @@ const wildersInfos = [{
 {
   name: "Copy-Denhez",
   lastname: "Caroline",
-  age: "19",
+  age: function () {
+    let diff = Date.now() - this.calcAge.getTime();
+    let age = new Date(diff);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  },
+  calcAge: new Date(1980, 7, 4),
   birthday: "45/05/3907",
   pets: false,
   nameOfPets: "lili",
@@ -39,7 +49,12 @@ const wildersInfos = [{
 {
   name: "Cédric",
   lastname: "Lassalle",
-  age: "19",
+  age: function () {
+    let diff = Date.now() - this.calcAge.getTime();
+    let age = new Date(diff);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  },
+  calcAge: new Date(1980, 7, 4),
   birthday: "45/05/3907",
   pets: false,
   nameOfPets: "lili",
@@ -58,7 +73,12 @@ const wildersInfos = [{
 {
   name: "Guillaume",
   lastname: "Desmis",
-  age: "19",
+  age: function () {
+    let diff = Date.now() - this.calcAge.getTime();
+    let age = new Date(diff);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  },
+  calcAge: new Date(1980, 7, 4),
   birthday: "45/05/3907",
   pets: false,
   nameOfPets: "lili",
@@ -77,7 +97,12 @@ const wildersInfos = [{
 {
   name: "Héloïse",
   lastname: "Ferla",
-  age: "19",
+  age: function () {
+    let diff = Date.now() - this.calcAge.getTime();
+    let age = new Date(diff);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  },
+  calcAge: new Date(1980, 7, 4),
   birthday: "45/05/3907",
   pets: false,
   nameOfPets: "lili",
@@ -96,7 +121,12 @@ const wildersInfos = [{
 {
   name: "Jonathan",
   lastname: "Guillot",
-  age: "19",
+  age: function () {
+    let diff = Date.now() - this.calcAge.getTime();
+    let age = new Date(diff);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  },
+  calcAge: new Date(1980, 7, 4),
   birthday: "45/05/3907",
   pets: false,
   nameOfPets: "lili",
@@ -115,7 +145,12 @@ const wildersInfos = [{
 {
   name: "Marion",
   lastname: "Grolleau",
-  age: "19",
+  age: function () {
+    let diff = Date.now() - this.calcAge.getTime();
+    let age = new Date(diff);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  },
+  calcAge: new Date(1980, 7, 4),
   birthday: "45/05/3907",
   pets: false,
   nameOfPets: "lili",
@@ -134,7 +169,12 @@ const wildersInfos = [{
 {
   name: "Othmane",
   lastname: "Khiter",
-  age: "19",
+  age: function () {
+    let diff = Date.now() - this.calcAge.getTime();
+    let age = new Date(diff);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  },
+  calcAge: new Date(1980, 7, 4),
   birthday: "45/05/3907",
   pets: false,
   nameOfPets: "lili",
@@ -153,7 +193,12 @@ const wildersInfos = [{
 {
   name: "Quentin",
   lastname: "Macquart",
-  age: "19",
+  age: function () {
+    let diff = Date.now() - this.calcAge.getTime();
+    let age = new Date(diff);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  },
+  calcAge: new Date(1980, 7, 4),
   birthday: "45/05/3907",
   pets: false,
   nameOfPets: "lili",
@@ -172,7 +217,12 @@ const wildersInfos = [{
 {
   name: "Sonia",
   lastname: "Benoumeur",
-  age: "19",
+  age: function () {
+    let diff = Date.now() - this.calcAge.getTime();
+    let age = new Date(diff);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  },
+  calcAge: new Date(1980, 7, 4),
   birthday: "45/05/3907",
   pets: false,
   nameOfPets: "lili",
@@ -191,7 +241,12 @@ const wildersInfos = [{
 {
   name: "Bertrand",
   lastname: "Briset",
-  age: "19",
+  age: function () {
+    let diff = Date.now() - this.calcAge.getTime();
+    let age = new Date(diff);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  },
+  calcAge: new Date(1980, 7, 4),
   birthday: "45/05/3907",
   pets: false,
   nameOfPets: "lili",
@@ -210,7 +265,12 @@ const wildersInfos = [{
 {
   name: "Claire",
   lastname: "Delaleau",
-  age: "19",
+  age: function () {
+    let diff = Date.now() - this.calcAge.getTime();
+    let age = new Date(diff);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  },
+  calcAge: new Date(1980, 7, 4),
   birthday: "45/05/3907",
   pets: false,
   nameOfPets: "lili",
@@ -229,7 +289,12 @@ const wildersInfos = [{
 {
   name: "Franck",
   lastname: "Depoorter",
-  age: "19",
+  age: function () {
+    let diff = Date.now() - this.calcAge.getTime();
+    let age = new Date(diff);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  },
+  calcAge: new Date(1980, 7, 4),
   birthday: "45/05/3907",
   pets: false,
   nameOfPets: "lili",
@@ -248,7 +313,12 @@ const wildersInfos = [{
 {
   name: "Guillaume",
   lastname: "Keerhem",
-  age: "19",
+  age: function () {
+    let diff = Date.now() - this.calcAge.getTime();
+    let age = new Date(diff);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  },
+  calcAge: new Date(1980, 7, 4),
   birthday: "45/05/3907",
   pets: false,
   nameOfPets: "lili",
@@ -267,7 +337,12 @@ const wildersInfos = [{
 {
   name: "Jeremy",
   lastname: "Vandomme",
-  age: "19",
+  age: function () {
+    let diff = Date.now() - this.calcAge.getTime();
+    let age = new Date(diff);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  },
+  calcAge: new Date(1980, 7, 4),
   birthday: "45/05/3907",
   pets: false,
   nameOfPets: "lili",
@@ -287,7 +362,12 @@ const wildersInfos = [{
 {
   name: "Luigi",
   lastname: "Menez",
-  age: "19",
+  age: function () {
+    let diff = Date.now() - this.calcAge.getTime();
+    let age = new Date(diff);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  },
+  calcAge: new Date(1980, 7, 4),
   birthday: "45/05/3907",
   pets: false,
   nameOfPets: "lili",
@@ -306,7 +386,12 @@ const wildersInfos = [{
 {
   name: "Nacyme",
   lastname: "Gallel",
-  age: "19",
+  age: function () {
+    let diff = Date.now() - this.calcAge.getTime();
+    let age = new Date(diff);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  },
+  calcAge: new Date(1980, 7, 4),
   birthday: "45/05/3907",
   pets: false,
   nameOfPets: "lili",
@@ -325,7 +410,12 @@ const wildersInfos = [{
 {
   name: "Pierre",
   lastname: "Goemans",
-  age: "19",
+  age: function () {
+    let diff = Date.now() - this.calcAge.getTime();
+    let age = new Date(diff);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  },
+  calcAge: new Date(1980, 7, 4),
   birthday: "45/05/3907",
   pets: false,
   nameOfPets: "lili",
@@ -344,7 +434,12 @@ const wildersInfos = [{
 {
   name: "Romain",
   lastname: "Brehon",
-  age: "19",
+  age: function () {
+    let diff = Date.now() - this.calcAge.getTime();
+    let age = new Date(diff);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  },
+  calcAge: new Date(1980, 7, 4),
   birthday: "45/05/3907",
   pets: false,
   nameOfPets: "lili",
@@ -363,7 +458,12 @@ const wildersInfos = [{
 {
   name: "Victor",
   lastname: "Morel",
-  age: "19",
+  age: function () {
+    let diff = Date.now() - this.calcAge.getTime();
+    let age = new Date(diff);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  },
+  calcAge: new Date(1980, 7, 4),
   birthday: "45/05/3907",
   pets: false,
   nameOfPets: "lili",
@@ -382,7 +482,12 @@ const wildersInfos = [{
 {
   name: "Hacene",
   lastname: "Hamroune",
-  age: "19",
+  age: function () {
+    let diff = Date.now() - this.calcAge.getTime();
+    let age = new Date(diff);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  },
+  calcAge: new Date(1980, 7, 4),
   birthday: "45/05/3907",
   pets: false,
   nameOfPets: "lili",
@@ -401,7 +506,12 @@ const wildersInfos = [{
 {
   name: "Loic",
   lastname: "Brassart",
-  age: "19",
+  age: function () {
+    let diff = Date.now() - this.calcAge.getTime();
+    let age = new Date(diff);
+    return Math.abs(age.getUTCFullYear() - 1970);
+  },
+  calcAge: new Date(1980, 7, 4),
   birthday: "45/05/3907",
   pets: false,
   nameOfPets: "lili",
@@ -536,46 +646,46 @@ modal.addEventListener("click", function() {
 function creatModalContent(id) {
 
 // Picture Profile 
-const profileImage = document.createElement("div")
-profileImage.setAttribute("class", "imageModal")
+const profileImage = document.createElement("div");
+profileImage.setAttribute("class", "imageModal");
 profileImage.style.backgroundImage = `url('${wildersInfos[id].picureProfile}')`;
-modalContent.appendChild(profileImage)
+modalContent.appendChild(profileImage);
   // Name User
-const titleModal = document.createElement("h2")
-titleModal.textContent = wildersInfos[id].name
-modalContent.appendChild(titleModal)
+const titleModal = document.createElement("h2");
+titleModal.textContent = wildersInfos[id].name;
+modalContent.appendChild(titleModal);
   // Age User
-const ageUser = document.createElement("p")
-ageUser.textContent = wildersInfos[id].age
-modalContent.appendChild(ageUser)
+const ageUser = document.createElement("p");
+ageUser.textContent = wildersInfos[id].age();
+modalContent.appendChild(ageUser);
   // birthday User
-const birthdayUser = document.createElement("p")
-birthdayUser.textContent = wildersInfos[id].birthday
-modalContent.appendChild(birthdayUser)
+const birthdayUser = document.createElement("p");
+birthdayUser.textContent = wildersInfos[id].birthday;
+modalContent.appendChild(birthdayUser);
   // pets User
-const petsUser = document.createElement("p")
-petsUser.textContent = wildersInfos[id].pets
-modalContent.appendChild(petsUser)
+const petsUser = document.createElement("p");
+petsUser.textContent = wildersInfos[id].pets;
+modalContent.appendChild(petsUser);
   // name of pets User
-const namePetsUser = document.createElement("p")
-namePetsUser.textContent = wildersInfos[id].nameOfPets
-modalContent.appendChild(namePetsUser)
+const namePetsUser = document.createElement("p");
+namePetsUser.textContent = wildersInfos[id].nameOfPets;
+modalContent.appendChild(namePetsUser);
   // favorite foods User
-const favoriteUserFood = document.createElement("p")
-favoriteUserFood.textContent = wildersInfos[id].favoritFood
-modalContent.appendChild(favoriteUserFood)
+const favoriteUserFood = document.createElement("p");
+favoriteUserFood.textContent = wildersInfos[id].favoritFood;
+modalContent.appendChild(favoriteUserFood);
   // wild side User
-const wildSideUser = document.createElement("p")
-wildSideUser.textContent = wildersInfos[id].wildSide
-modalContent.appendChild(wildSideUser)
+const wildSideUser = document.createElement("p");
+wildSideUser.textContent = wildersInfos[id].wildSide;
+modalContent.appendChild(wildSideUser);
   // hobby User
-const hobbyUser = document.createElement("p")
-hobbyUser.textContent = wildersInfos[id].hobby
-modalContent.appendChild(hobbyUser)
+const hobbyUser = document.createElement("p");
+hobbyUser.textContent = wildersInfos[id].hobby;
+modalContent.appendChild(hobbyUser);
   // skills User
-const skillsUser = document.createElement("p")
-skillsUser.textContent = wildersInfos[id].skills
-modalContent.appendChild(skillsUser)
+const skillsUser = document.createElement("p");
+skillsUser.textContent = wildersInfos[id].skills;
+modalContent.appendChild(skillsUser);
   // motivation User
 const motivationUser = document.createElement("p");
 motivationUser.textContent = wildersInfos[id].motivation;
@@ -590,7 +700,7 @@ modalContent.appendChild(linkedinUser);
 const githubUser = document.createElement("a");
 githubUser.setAttribute("href", wildersInfos[id].social.gitHub);
 githubUser.setAttribute("target", "_blank");
-githubUser.innerHTML = "<img src='https://img.icons8.com/material-outlined/40/000000/github.png'>"
+githubUser.innerHTML = "<img src='https://img.icons8.com/material-outlined/40/000000/github.png'>";
 modalContent.appendChild(githubUser);
 // Cv User
 const curriculumUser = document.createElement("a");
@@ -610,7 +720,7 @@ modalContent.appendChild(curriculumUser);
 
 function deleteModalContent() {
 while (modalContent.firstChild) {
-  modalContent.removeChild(modalContent.lastChild)
+  modalContent.removeChild(modalContent.lastChild);
 }
 }
 
@@ -619,7 +729,7 @@ const allBtn = document.querySelectorAll("button")
 for (let i = 0; i < allBtn.length; i++) {
 allBtn[i].addEventListener('click', function() {
 
-  creatModalContent(i)
+  creatModalContent(i);
 })
 }
 
