@@ -124,7 +124,7 @@ function createWildersCard(name, id) {
   cardBackContainer.appendChild(btnBackCard);
 
   const icones = document.createElement("div");
-  icones.setAttribute('class', 'icones-container')
+  icones.setAttribute("class", "icones-container");
   cardBackContainer.appendChild(icones);
 
   const githubLink = document.createElement("a");
