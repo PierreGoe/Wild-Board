@@ -247,45 +247,30 @@ function creatModalContent(id){
     petsUser.textContent = wildersInfos[id].pets
     modalContent.appendChild(petsUser)
     // name of pets User
-    const nameOfPets = document.createElement("p")
-    nameOfPets.textContent = wildersInfos[id].nameOfPets
-    modalContent.appendChild(nameOfPets)
+    const namePetsUser = document.createElement("p")
+    namePetsUser.textContent = wildersInfos[id].nameOfPets
+    modalContent.appendChild(namePetsUser)
     // favorite foods User
-    const favoritFood = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].favoritFood
-    modalContent.appendChild(favoritFood)
+    const favoriteUserFood = document.createElement("p")
+    favoriteUserFood.textContent = wildersInfos[id].favoritFood
+    modalContent.appendChild(favoriteUserFood)
     // wild side User
-    const wildSide = document.createElement("p")
-    wildSide.textContent = wildersInfos[id].wildSide
-    modalContent.appendChild(wildSide)
+    const wildSideUser = document.createElement("p")
+    wildSideUser.textContent = wildersInfos[id].wildSide
+    modalContent.appendChild(wildSideUser)
     // hobby User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
+    const hobbyUser = document.createElement("p")
+    hobbyUser.textContent = wildersInfos[id].hobby
+    modalContent.appendChild(hobbyUser)
     // skills User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
+    const skillsUser = document.createElement("p")
+    skillsUser.textContent = wildersInfos[id].skills
+    modalContent.appendChild(skillsUser)
     // motivation User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
-    // picture User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
-    // linkedin User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
-    // git hub User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
-    // Cv User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
+    const motivationUser = document.createElement("p")
+    motivationUser.textContent = wildersInfos[id].motivation
+    modalContent.appendChild(motivationUser)
+   
     
 
 
