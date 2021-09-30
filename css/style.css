@@ -125,6 +125,7 @@ h1 {
 .pictureProfil {
   width: 200px;
   height: 80%;
+  object-fit: cover;
 }
 .front,
 .card,
