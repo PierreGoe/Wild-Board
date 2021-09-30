@@ -626,3 +626,28 @@ for (let i = 0; i < allBtn.length; i++) {
 // copyright year
 let currentYear = (new Date()).getFullYear();
 document.querySelector(".copyrightYear").innerHTML = currentYear;
+
+
+
+
+// Flame mode 
+const header = document.querySelector('header')
+const btnFlame = document.createElement('button') 
+btnFlame.setAttribute("class","flamebtn")
+btnFlame.setAttribute("id","flamebtnid")
+btnFlame.textContent= "don't click"
+header.appendChild(btnFlame)
+
+
+
+btnFlame.addEventListener('click', function(){
+
+    const alldiv = document.querySelectorAll('div')
+    for (let i = 0; i < allBtn.length; i++){
+        alldiv[i].style.backgroundImage = `url('https://c.tenor.com/jnyLvpwBKOUAAAAi/fireplace-fire.gif')`;
+    }
+
+})
+
+
+
