@@ -85,7 +85,7 @@ const wildersInfos = [
   },
 ];
 
-function createWildersCard(name) {
+function createWildersCard(name, id) {
   const cardContainer = document.querySelector(".card-container");
 
   const cardBody = document.createElement("article");
