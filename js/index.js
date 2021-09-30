@@ -213,4 +213,6 @@ for(let i=0; i<allBtn.length; i++){
     })
 }
 
-
+// copyright year
+let currentYear = (new Date()).getFullYear();
+document.querySelector(".copyrightYear").innerHTML = currentYear;

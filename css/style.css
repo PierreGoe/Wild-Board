@@ -2,6 +2,16 @@
   --radiusCard: 5%;
 }
 
+footer{
+  height: 10vh;
+  background-color: #f76c6c;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
 .card {
   height: 200px;
   width: 200px;
@@ -90,7 +100,7 @@ h1 {
 }
 
 button {
-  background-color: coral;
+  background-color: #f76c6c;
   height: 30px;
   width: 60px;
   z-index: 10;
