@@ -184,27 +184,21 @@ for(let i=0; i<btns.length; i++){
     });
     span.addEventListener('click', function(){
         modal.style.display = "none";
-        deleteModalContent()
+        deleteModalContent();
     });
     modal.addEventListener('click', function(){
         modal.style.display = "none";
+        deleteModalContent();
     });
 }
     
 
 
 
-// function createWildersModal(id){
-//     const modal = document.querySelector("#modalUserProfile");
-//     const idUser = document.createElement('p');
-//     idUser.innerHTML= id;
-//     modal.appendChild(idUser)
-// }
 
 
 function creatModalContent(id){
 
-    console.log(wildersInfos[id].name)
     const titleModal = document.createElement("h1")
     titleModal.textContent = wildersInfos[id].name
     modalContent.appendChild(titleModal)
