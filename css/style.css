@@ -211,4 +211,5 @@ button {
     height: 300px;
     width: 200px;
     margin: auto;
+    background-size: cover;
 }
