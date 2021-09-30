@@ -216,9 +216,11 @@ for (let i = 0; i < btns.length; i++) {
         });
         span.addEventListener("click", function () {
         modal.style.display = "none";
+        deleteModalContent()
         });
         modal.addEventListener("click", function () {
         modal.style.display = "none";
+        deleteModalContent()
         });
 }
     
