@@ -216,9 +216,11 @@ for (let i = 0; i < btns.length; i++) {
         });
         span.addEventListener("click", function () {
         modal.style.display = "none";
+        deleteModalContent()
         });
         modal.addEventListener("click", function () {
         modal.style.display = "none";
+        deleteModalContent()
         });
 }
     
@@ -247,25 +249,25 @@ function creatModalContent(id){
     petsUser.textContent = wildersInfos[id].pets
     modalContent.appendChild(petsUser)
     // name of pets User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
+    const namePetsUser = document.createElement("p")
+    namePetsUser.textContent = wildersInfos[id].nameOfPets
+    modalContent.appendChild(namePetsUser)
     // favorite foods User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
+    const favoriteUserFood = document.createElement("p")
+    favoriteUserFood.textContent = wildersInfos[id].favoritFood
+    modalContent.appendChild(favoriteUserFood)
     // wild side User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
+    const wildSideUser = document.createElement("p")
+    wildSideUser.textContent = wildersInfos[id].wildSide
+    modalContent.appendChild(wildSideUser)
     // hobby User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
+    const hobbyUser = document.createElement("p")
+    hobbyUser.textContent = wildersInfos[id].hobby
+    modalContent.appendChild(hobbyUser)
     // skills User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
+    const skillsUser = document.createElement("p")
+    skillsUser.textContent = wildersInfos[id].skills
+    modalContent.appendChild(skillsUser)
     // motivation User
     const motivationUser = document.createElement("p");
     motivationUser.textContent = wildersInfos[id].motivation;
