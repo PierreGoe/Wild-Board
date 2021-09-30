@@ -136,4 +136,3 @@ for (let i = 0; i < cards.length; i++){
       cards[i].classList.toggle("flipCard");
     }
 }
-
