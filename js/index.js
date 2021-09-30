@@ -14,7 +14,7 @@ const wildersInfos = [
     },
   },
   {
-    name: "Mona Lisa",
+    name: "Mona Lucie",
     age: "19",
     birthday: "",
     pets: false,
@@ -28,7 +28,7 @@ const wildersInfos = [
     },
   },
   {
-    name: "Mona Lisa",
+    name: "Mona Julie",
     age: "19",
     birthday: "",
     pets: false,
@@ -42,7 +42,7 @@ const wildersInfos = [
     },
   },
   {
-    name: "Mona Lisa",
+    name: "Mona Frack",
     age: "19",
     birthday: "",
     pets: false,
@@ -56,7 +56,7 @@ const wildersInfos = [
     },
   },
   {
-    name: "Mona Lisa",
+    name: "Mona Jacky",
     age: "19",
     birthday: "",
     pets: false,
@@ -174,6 +174,7 @@ for (let i = 0; i < cards.length; i++) {
 
 // Modal
 const modal = document.querySelector("#modalUserProfile");
+const modalContent = document.querySelector(".modalContent")
 const btns = document.querySelectorAll(".btnProfile");
 const span = document.querySelector(".close");
 for(let i=0; i<btns.length; i++){
@@ -183,6 +184,7 @@ for(let i=0; i<btns.length; i++){
     });
     span.addEventListener('click', function(){
         modal.style.display = "none";
+        deleteModalContent()
     });
     modal.addEventListener('click', function(){
         modal.style.display = "none";
@@ -201,15 +203,20 @@ for(let i=0; i<btns.length; i++){
 
 
 function creatModalContent(id){
+
     console.log(wildersInfos[id].name)
     const titleModal = document.createElement("h1")
     titleModal.textContent = wildersInfos[id].name
-    modal.appendChild(titleModal)
-
-
-
+    modalContent.appendChild(titleModal)
 
 }
+
+function deleteModalContent(){
+    while (modalContent.firstChild){
+        modalContent.removeChild(modalContent.lastChild)
+    }
+}
+
 
 const allBtn = document.querySelectorAll("button")
 for(let i=0; i<allBtn.length; i++){
