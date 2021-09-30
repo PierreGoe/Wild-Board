@@ -1,201 +1,214 @@
 :root {
-  --radiusCard: 5%;
-  --colorWildCodeSchool: #f76c6c;
-  --varela: 'Varela Round', sans-serif;
-  --raleway: 'Raleway', sans-serif;
+    --radiusCard: 5%;
+    --colorWildCodeSchool: #f76c6c;
+    --varela: 'Varela Round', sans-serif;
+    --raleway: 'Raleway', sans-serif;
 }
 
 .about-title {
-  background: linear-gradient(30deg, #ddbdbd 0%, #f76c6c 100%);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 700;
-  font-size: 25px;
-  text-align: center;
-  margin-top: 20px;
+    background: linear-gradient(30deg, #ddbdbd 0%, #f76c6c 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
 }
 
-footer{
-  height: 10vh;
-  background-color: #f76c6c;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding-bottom: 10px;
+footer {
+    height: 10vh;
+    background-color: #f76c6c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
 }
 
 .card {
-  height: 200px;
-  width: 200px;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: all 0.8s ease;
-  margin-top: 30px;
-  align-content: space-between;
-  margin: auto;
-  margin-top: 3em;
+    height: 300px;
+    width: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    margin-top: 30px;
+    align-content: space-between;
+    margin: auto;
+    margin-top: 3em;
+    font-family: var(--varela);
+    font-weight: bolder;
 }
 
 .front {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  text-align: center;
-  background-color: rgb(255, 255, 255);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  text-align: center;
-  background-color: white;
-  transform: rotateY(180deg);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    text-align: center;
+    background-color: white;
+    transform: rotateY(180deg);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .back-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 85%;
-  width: 85%;
-  border: 5px solid #f76c6c;
-  border-radius: 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 85%;
+    width: 85%;
+    border: 5px solid #f76c6c;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .icones-container {
-  width: 80%;
-  display: flex;
-  justify-content: space-around;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .flipCard {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 header {
-  height: 15vh;
-  background-color: #f76c6c;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    height: 15vh;
+    background-color: #f76c6c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 h1 {
-  color: #ffffff;
-  font-family: Raleway;
-  font-style: normal;
-  font-size: 36px;
-  line-height: 42px;
-  /* text-align: center; */
+    color: #ffffff;
+    font-family: Raleway;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 42px;
+    /* text-align: center; */
 }
 
 .logo {
-  height: 100%;
+    height: 100%;
 }
 
 .card-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: space-between;
-  flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: nowrap;
 }
 
 @media screen and (min-width: 400px) {
-  /* Desktop mode */
-  .card-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+    /* Desktop mode */
+    .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 .pictureProfil {
-  width: 200px;
-  height: 80%;
+    width: 200px;
+    height: 80%;
 }
+
 .front,
 .card,
 .back {
-  border-radius: var(--radiusCard);
+    border-radius: var(--radiusCard);
 }
+
 .pictureProfil {
-  border-radius: var(--radiusCard) var(--radiusCard) 0 0;
+    border-radius: var(--radiusCard) var(--radiusCard) 0 0;
 }
 
 button {
-  background-color: #f76c6c;
-  height: 30px;
-  width: 60px;
-  z-index: 10;
+    background-color: #f76c6c;
+    height: 30px;
+    width: 60px;
+    z-index: 10;
 }
 
 .btnProfile {
-  background-color: #f76c6c;
-  border: 1px solid #f76c6c;
-  width: 70%;
-  border-radius: 25px;
-  padding: 20px;
-  margin-bottom: 15px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background-color: #f76c6c;
+    border: 1px solid #f76c6c;
+    width: 70%;
+    border-radius: 25px;
+    padding: 20px;
+    margin-bottom: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: white/* Fallback color */
-  
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: white/* Fallback color */
 }
+
 
 /* Modal Content/Box */
+
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
 }
 
+
 /* The Close Button */
+
 .close {
-  color: var(--colorWildCodeSchool);
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+    color: var(--colorWildCodeSchool);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-
-.imageModal{
+.imageModal {
     height: 300px;
     width: 200px;
     margin: auto;
-
 }
