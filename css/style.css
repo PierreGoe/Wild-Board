@@ -1,6 +1,8 @@
 :root {
   --radiusCard: 5%;
-  --colorWildCodeSchool : #f76c6c;
+  --colorWildCodeSchool: #f76c6c;
+  --varela: 'Varela Round', sans-serif;
+  --raleway: 'Raleway', sans-serif;
 }
 
 .about-title {
