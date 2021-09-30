@@ -138,9 +138,7 @@ function createWildersCard(name, id) {
 
   // content to add
   cardBody.appendChild(cardBack);
-  const backTitle = document.createElement("h2");
-  backTitle.textContent = name;
-  cardBack.appendChild(backTitle);
+  
 
 //   button plus info back card
   const btnBackCard = document.createElement("button");
@@ -211,22 +209,19 @@ const modalContent = document.querySelector(".modalContent")
 const btns = document.querySelectorAll(".btnProfile");
 const span = document.querySelector(".close");
 for (let i = 0; i < btns.length; i++) {
-    console.log(btns[i]);
-    btns[i].addEventListener("click", function () {
-      modal.style.display = "block";
-    });
-    span.addEventListener("click", function () {
-      modal.style.display = "none";
-    });
-    modal.addEventListener("click", function () {
-      modal.style.display = "none";
-    });
-  }
+        
+        console.log(btns[i]);
+        btns[i].addEventListener("click", function () {
+        modal.style.display = "block";
+        });
+        span.addEventListener("click", function () {
+        modal.style.display = "none";
+        });
+        modal.addEventListener("click", function () {
+        modal.style.display = "none";
+        });
+}
     
-
-
-
-
 
 function creatModalContent(id){
 
@@ -239,7 +234,59 @@ function creatModalContent(id){
     const titleModal = document.createElement("h2")
     titleModal.textContent = wildersInfos[id].name
     modalContent.appendChild(titleModal)
-
+    // Age User
+    const ageUser = document.createElement("p")
+    ageUser.textContent = wildersInfos[id].age
+    modalContent.appendChild(ageUser)
+    // birthday User
+    const birthdayUser = document.createElement("p")
+    birthdayUser.textContent = wildersInfos[id].birthday
+    modalContent.appendChild(birthdayUser)
+    // pets User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    // name of pets User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    // favorite foods User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    // wild side User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    // hobby User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    // skills User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    // motivation User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    // picture User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    // linkedin User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    // git hub User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    // Cv User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    
 
 
     
