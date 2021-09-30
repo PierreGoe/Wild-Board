@@ -276,25 +276,19 @@ function creatModalContent(id){
     const linkedinUser = document.createElement("a");
     linkedinUser.setAttribute("href", wildersInfos[id].social.linkedin);
     linkedinUser.setAttribute("target", "_blank");
-    const linkedinLogo = document.createElement("img");
-    linkedinLogo.setAttribute("src", "https://img.icons8.com/material-outlined/30/000000/linkedin--v1.png");
-    linkedinUser.innerHTML = linkedinLogo;
+    linkedinUser.innerHTML = "<img src='https://img.icons8.com/material-outlined/40/000000/linkedin--v1.png'>";
     modalContent.appendChild(linkedinUser);
     // git hub User
     const githubUser = document.createElement("a");
     githubUser.setAttribute("href", wildersInfos[id].social.gitHub);
     githubUser.setAttribute("target", "_blank");
-    const githubLogo = document.createElement("img");
-    githubLogo.setAttribute("src", "https://img.icons8.com/material-outlined/30/000000/github.png");
-    githubLogo.innerHTML = githubLogo;
+    githubUser.innerHTML = "<img src='https://img.icons8.com/material-outlined/40/000000/github.png'>"
     modalContent.appendChild(githubUser);
     // Cv User
     const curriculumUser = document.createElement("a");
     curriculumUser.setAttribute("href", wildersInfos[id].social.cvUser);
     curriculumUser.setAttribute("target", "_blank");
-    const cvLogo = document.createElement("img");
-    cvLogo.setAttribute("src", "https://img.icons8.com/material-rounded/30/000000/parse-from-clipboard.png");
-    curriculumUser.innerHTML = cvLogo;
+    curriculumUser.innerHTML = "<img src='https://img.icons8.com/material-rounded/40/000000/parse-from-clipboard.png'>";
     modalContent.appendChild(curriculumUser);
     
 
