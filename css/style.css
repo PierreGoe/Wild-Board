@@ -40,6 +40,11 @@ footer {
     font-weight: bolder;
 }
 
+.card h2 {
+    height: 50px;
+    padding-top: 20px;
+}
+
 .front {
     position: absolute;
     width: 100%;
