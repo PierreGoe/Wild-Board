@@ -10,7 +10,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pictureUser1.jpg",
+        picureProfile: "./source/image/users/benoit.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -29,7 +29,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pictureUser2.jpeg",
+        picureProfile: "./source/image/users/caroline.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -48,7 +48,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pictureUser1.jpg",
+        picureProfile: "./source/image/users/cedric.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -67,7 +67,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pictureUser2.jpeg",
+        picureProfile: "./source/image/users/guillaume.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -86,7 +86,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pictureUser1.jpg",
+        picureProfile: "./source/image/users/heloise.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -105,7 +105,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pictureUser2.jpeg",
+        picureProfile: "./source/image/users/jonathan.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -124,7 +124,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pictureUser1.jpg",
+        picureProfile: "./source/image/users/marion.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -143,7 +143,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pictureUser2.jpeg",
+        picureProfile: "./source/image/users/othmane.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -162,7 +162,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pictureUser1.jpg",
+        picureProfile: "./source/image/users/quentin.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -181,7 +181,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pictureUser2.jpeg",
+        picureProfile: "./source/image/users/sonia.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -200,7 +200,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pictureUser1.jpg",
+        picureProfile: "./source/image/users/bertrand.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -219,7 +219,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pictureUser2.jpeg",
+        picureProfile: "./source/image/users/claire.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -238,7 +238,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pictureUser1.jpg",
+        picureProfile: "./source/image/users/franck.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -257,7 +257,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pictureUser2.jpeg",
+        picureProfile: "./source/image/users/guillaumeK.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -276,7 +276,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pictureUser1.jpg",
+        picureProfile: "./source/image/users/jeremy.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -296,7 +296,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pictureUser1.jpg",
+        picureProfile: "./source/image/users/luigi.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -315,7 +315,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pictureUser2.jpeg",
+        picureProfile: "./source/image/users/nacyme.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -334,7 +334,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pictureUser1.jpg",
+        picureProfile: "./source/image/users/pierre.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -353,7 +353,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pictureUser2.jpeg",
+        picureProfile: "./source/image/users/romain.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -372,7 +372,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pictureUser1.jpg",
+        picureProfile: "./source/image/users/victore.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -391,7 +391,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pictureUser2.jpeg",
+        picureProfile: "",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -410,7 +410,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pictureUser2.jpeg",
+        picureProfile: "",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -431,7 +431,7 @@ function createWildersCard(name, id) {
     // content to add
 
     const cardImage = document.createElement("img");
-    cardImage.setAttribute("src", "source/image/users/pictureUser1.jpg");
+    cardImage.setAttribute("src", wildersInfos[id].picureProfile);
     cardImage.setAttribute("class", "pictureProfil");
     cardFront.appendChild(cardImage);
 
