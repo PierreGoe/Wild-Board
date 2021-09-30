@@ -1,116 +1,134 @@
-:root{
-    --radiusCard: 5%;
+:root {
+  --radiusCard: 5%;
 }
 
-
-
-
-.card  {
-    height: 200px;
-    width: 200px;
-    position:relative;
-    transform-style: preserve-3d;
-    transition: all 0.8s ease;
-    margin-top: 30px;
-    align-content: space-between;
-    margin: auto;
-    margin-top: 3em;
-
-  
-    
-
-    
-    
+.card {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  margin-top: 30px;
+  align-content: space-between;
+  margin: auto;
+  margin-top: 3em;
 }
 
-.front{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
+.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    text-align: center;  
-    background-color: red;  
-    transform: rotateY(180deg);
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  text-align: center;
+  background-color: white;
+  transform: rotateY(180deg);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .flipCard {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
-header{
-    height: 15vh;
-    background-color: #f76c6c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-} 
-
-h1{
-
-color: #ffffff;
-font-family: Raleway;
-font-style: normal;
-font-size: 36px;
-line-height: 42px;
-/* text-align: center; */
-
-
+header {
+  height: 15vh;
+  background-color: #f76c6c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.logo  {
-    height: 100%;
+h1 {
+  color: #ffffff;
+  font-family: Raleway;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 42px;
+  /* text-align: center; */
 }
 
-.card-container{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    align-content: space-between;
-    flex-wrap: nowrap;
-    
-}
-@media screen and (min-width: 400px){
-    /* Desktop mode */
-    .card-container{
-        flex-direction: row;
-        flex-wrap:  wrap;
-    }
-}
-    
-
-
-
-.pictureProfil{
-    width: 200px;
-    height: 80%;
- 
-    
-    
-}
-.front, .card,.back{
-    border-radius: var(--radiusCard);
-}
-.pictureProfil{
-    border-radius: var(--radiusCard) var(--radiusCard) 0 0;
+.logo {
+  height: 100%;
 }
 
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  flex-wrap: nowrap;
+}
+@media screen and (min-width: 400px) {
+  /* Desktop mode */
+  .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 
-.btn{
-    background-color: coral;
-    height: 30px;
-    width: 60px;
-    z-index: 10;
+.pictureProfil {
+  width: 200px;
+  height: 80%;
+}
+.front,
+.card,
+.back {
+  border-radius: var(--radiusCard);
+}
+.pictureProfil {
+  border-radius: var(--radiusCard) var(--radiusCard) 0 0;
+}
+
+button {
+  background-color: coral;
+  height: 30px;
+  width: 60px;
+  z-index: 10;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
