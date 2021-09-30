@@ -38,6 +38,16 @@ footer {
     margin-top: 3em;
     font-family: var(--varela);
     font-weight: bolder;
+    bottom: 0;
+}
+
+.card h2 {
+    height: 50px;
+    padding-top: 20px;
+}
+
+.card:hover {
+    bottom: 10px;
 }
 
 .front {
@@ -125,9 +135,9 @@ h1 {
 }
 
 .pictureProfil {
-  width: 200px;
-  height: 80%;
-  object-fit: cover;
+    width: 200px;
+    height: 80%;
+    object-fit: cover;
 }
 
 .front,
