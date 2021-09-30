@@ -141,10 +141,6 @@ function createWildersCard(name, id) {
   const backTitle = document.createElement("h2");
   backTitle.textContent = name;
   cardBack.appendChild(backTitle);
-  const btnBackCard = document.createElement("button")
-  btnBackCard.setAttribute("id", `btnProfile${id}`)
-  btnBackCard.setAttribute("class", "btnProfile")
-  cardBack.appendChild(btnBackCard) 
 
 //   button plus info back card
   const btnBackCard = document.createElement("button");
