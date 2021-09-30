@@ -391,7 +391,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "",
+        picureProfile: "./source/image/users/hacene.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -410,7 +410,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "",
+        picureProfile: "./source/image/users/loic.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
