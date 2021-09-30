@@ -247,17 +247,17 @@ function creatModalContent(id){
     petsUser.textContent = wildersInfos[id].pets
     modalContent.appendChild(petsUser)
     // name of pets User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
+    const nameOfPets = document.createElement("p")
+    nameOfPets.textContent = wildersInfos[id].nameOfPets
+    modalContent.appendChild(nameOfPets)
     // favorite foods User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
+    const favoritFood = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].favoritFood
+    modalContent.appendChild(favoritFood)
     // wild side User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
+    const wildSide = document.createElement("p")
+    wildSide.textContent = wildersInfos[id].wildSide
+    modalContent.appendChild(wildSide)
     // hobby User
     const petsUser = document.createElement("p")
     petsUser.textContent = wildersInfos[id].pets
