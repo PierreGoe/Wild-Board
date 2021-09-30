@@ -10,7 +10,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/benoit.jpg",
+        pictureProfile: "./source/image/users/benoit.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -18,8 +18,8 @@ const wildersInfos = [{
         },
     },
     {
-        name: "Copy-Denhez",
-        lastname: "Caroline",
+        name: "Caroline",
+        lastname: "Copy-Denhez",
         age: "19",
         birthday: "45/05/3907",
         pets: false,
@@ -29,7 +29,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/caroline.jpg",
+        pictureProfile: "./source/image/users/caroline.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -48,7 +48,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/cedric.jpg",
+        pictureProfile: "./source/image/users/cedric.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -67,7 +67,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/guillaume.jpg",
+        pictureProfile: "./source/image/users/guillaume.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -86,7 +86,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/heloise.jpg",
+        pictureProfile: "./source/image/users/heloise.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -105,7 +105,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/jonathan.jpg",
+        pictureProfile: "./source/image/users/jonathan.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -124,7 +124,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/marion.jpg",
+        pictureProfile: "./source/image/users/marion.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -143,7 +143,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/othmane.jpg",
+        pictureProfile: "./source/image/users/othmane.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -162,7 +162,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/quentin.jpg",
+        pictureProfile: "./source/image/users/quentin.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -181,7 +181,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/sonia.jpg",
+        pictureProfile: "./source/image/users/sonia.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -200,7 +200,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/bertrand.jpg",
+        pictureProfile: "./source/image/users/bertrand.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -219,7 +219,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/claire.jpg",
+        pictureProfile: "./source/image/users/claire.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -238,7 +238,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/franck.jpg",
+        pictureProfile: "./source/image/users/franck.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -257,7 +257,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/guillaumeK.jpg",
+        pictureProfile: "./source/image/users/guillaumeK.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -276,7 +276,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/jeremy.jpg",
+        pictureProfile: "./source/image/users/jeremy.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -296,7 +296,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/luigi.jpg",
+        pictureProfile: "./source/image/users/luigi.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -315,7 +315,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/nacyme.jpg",
+        pictureProfile: "./source/image/users/nacyme.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -334,7 +334,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/pierre.jpg",
+        pictureProfile: "./source/image/users/pierre.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -353,7 +353,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/romain.jpg",
+        pictureProfile: "./source/image/users/romain.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -372,7 +372,7 @@ const wildersInfos = [{
         hobby: "peinture",
         skills: "Le mime",
         motivation: "Aucune",
-        picureProfile: "./source/image/users/victore.jpg",
+        pictureProfile: "./source/image/users/victore.jpg",
         social: {
             linkedin: "lien Linkedin",
             gitHub: "lien gitHub",
@@ -431,7 +431,7 @@ function createWildersCard(name, id) {
     // content to add
 
     const cardImage = document.createElement("img");
-    cardImage.setAttribute("src", wildersInfos[id].picureProfile);
+    cardImage.setAttribute("src", wildersInfos[id].pictureProfile);
     cardImage.setAttribute("class", "pictureProfil");
     cardFront.appendChild(cardImage);
 
@@ -518,8 +518,8 @@ const modalContent = document.querySelector(".modalContent")
 const btns = document.querySelectorAll(".btnProfile");
 const span = document.querySelector(".close");
 for (let i = 0; i < btns.length; i++) {
-        
-        btns[i].addEventListener("click", function () {
+
+    btns[i].addEventListener("click", function() {
         modal.style.display = "block";
     });
     span.addEventListener("click", function() {
@@ -538,7 +538,7 @@ function creatModalContent(id) {
     // Picture Profile 
     const profileImage = document.createElement("div")
     profileImage.setAttribute("class", "imageModal")
-    profileImage.style.backgroundImage = `url('${wildersInfos[id].picureProfile}')`;
+    profileImage.style.backgroundImage = `url('${wildersInfos[id].pictureProfile}')`;
     modalContent.appendChild(profileImage)
         // Name User
     const titleModal = document.createElement("h2")
