@@ -267,25 +267,33 @@ function creatModalContent(id){
     petsUser.textContent = wildersInfos[id].pets
     modalContent.appendChild(petsUser)
     // motivation User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
-    // picture User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
+    const motivationUser = document.createElement("p");
+    motivationUser.textContent = wildersInfos[id].motivation;
+    modalContent.appendChild(motivationUser);
     // linkedin User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
+    const linkedinUser = document.createElement("a");
+    linkedinUser.setAttribute("href", wildersInfos[id].social.linkedin);
+    linkedinUser.setAttribute("target", "_blank");
+    const linkedinLogo = document.createElement("img");
+    linkedinLogo.setAttribute("src", "https://img.icons8.com/material-outlined/30/000000/linkedin--v1.png");
+    linkedinUser.innerHTML = linkedinLogo;
+    modalContent.appendChild(linkedinUser);
     // git hub User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
+    const githubUser = document.createElement("a");
+    githubUser.setAttribute("href", wildersInfos[id].social.gitHub);
+    githubUser.setAttribute("target", "_blank");
+    const githubLogo = document.createElement("img");
+    githubLogo.setAttribute("src", "https://img.icons8.com/material-outlined/30/000000/github.png");
+    githubLogo.innerHTML = githubLogo;
+    modalContent.appendChild(githubUser);
     // Cv User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
+    const curriculumUser = document.createElement("a");
+    curriculumUser.setAttribute("href", wildersInfos[id].social.cvUser);
+    curriculumUser.setAttribute("target", "_blank");
+    const cvLogo = document.createElement("img");
+    cvLogo.setAttribute("src", "https://img.icons8.com/material-rounded/30/000000/parse-from-clipboard.png");
+    curriculumUser.innerHTML = cvLogo;
+    modalContent.appendChild(curriculumUser);
     
 
 
