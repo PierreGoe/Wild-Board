@@ -128,6 +128,7 @@ function createWildersCard(name, id) {
   cardBack.appendChild(backTitle);
   const btnBackCard = document.createElement("button")
   btnBackCard.setAttribute("id", `btnProfile${id}`)
+  btnBackCard.setAttribute("class", "btnProfile")
   cardBack.appendChild(btnBackCard)  
 
 
@@ -135,7 +136,7 @@ function createWildersCard(name, id) {
 }
 
 for (let i = 0; i < wildersInfos.length; i++) {
-    createWildersCard(wildersInfos[i].name, wildersInfos[i].id);
+    createWildersCard(wildersInfos[i].name, wildersInfos.indexOf(wildersInfos[i]));
     console.log[i];
 }
 
@@ -155,14 +156,43 @@ for (let i = 0; i < cards.length; i++){
 
 // Modal
 const modal = document.querySelector("#modalUserProfile");
-const btn = document.querySelector("#btnProfile");
+const btns = document.querySelectorAll(".btnProfile");
 const span = document.querySelector(".close");
-btn.addEventListener('click', function(){
-    modal.style.display = "block";
-});
-span.addEventListener('click', function(){
-    modal.style.display = "none";
-});
-modal.addEventListener('click', function(){
-    modal.style.display = "none";
-});
+for(let i=0; i<btns.length; i++){
+    console.log(btns[i])
+    btns[i].addEventListener('click', function(){
+        modal.style.display = "block";
+    });
+    span.addEventListener('click', function(){
+        modal.style.display = "none";
+    });
+    modal.addEventListener('click', function(){
+        modal.style.display = "none";
+    });
+}
+    
+
+
+
+// function createWildersModal(id){
+//     const modal = document.querySelector("#modalUserProfile");
+//     const idUser = document.createElement('p');
+//     idUser.innerHTML= id;
+//     modal.appendChild(idUser)
+// }
+
+
+function creatModalContent(id){
+    console.log(wildersInfos[id].name)
+
+}
+
+const allBtn = document.querySelectorAll("button")
+for(let i=0; i<allBtn.length; i++){
+    allBtn[i].addEventListener('click', function(){
+        
+        creatModalContent(i)
+    })
+}
+
+
