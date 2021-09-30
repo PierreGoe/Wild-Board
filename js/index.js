@@ -259,13 +259,13 @@ function creatModalContent(id){
     petsUser.textContent = wildersInfos[id].pets
     modalContent.appendChild(petsUser)
     // hobby User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
+    const hobbyUser = document.createElement("p")
+    hobbyUser.textContent = wildersInfos[id].hobby
+    modalContent.appendChild(hobbyUser)
     // skills User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
+    const skillsUser = document.createElement("p")
+    skillsUser.textContent = wildersInfos[id].skills
+    modalContent.appendChild(skillsUser)
     // motivation User
     const petsUser = document.createElement("p")
     petsUser.textContent = wildersInfos[id].pets
