@@ -202,6 +202,12 @@ for(let i=0; i<btns.length; i++){
 
 function creatModalContent(id){
     console.log(wildersInfos[id].name)
+    const titleModal = document.createElement("h1")
+    titleModal.textContent = wildersInfos[id].name
+    modal.appendChild(titleModal)
+
+
+
 
 }
 
