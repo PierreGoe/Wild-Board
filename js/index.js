@@ -2,15 +2,20 @@ const wildersInfos = [
   {
     name: "Mona",
     lastname: "Lisa",
-    age: "19",
+    age: function () {
+      let diff = Date.now() - this.calcAge.getTime();
+      let age = new Date(diff);
+      return Math.abs(age.getUTCFullYear() - 1970);
+    },
+    calcAge: new Date(1980, 7, 4),
     birthday: "45/05/3907",
     pets: false,
     nameOfPets: "lili",
     favoritFood: "pizza",
     wildSide: "elle sait rester immobile durant des heures",
-    hobby:"peinture",
-    skills:"Le mime",
-    motivation:"Aucune",
+    hobby: "peinture",
+    skills: "Le mime",
+    motivation: "Aucune",
     picureProfile: "./source/image/users/pictureUser1.jpg",
     social: {
       linkedin: "lien Linkedin",
@@ -21,15 +26,20 @@ const wildersInfos = [
   {
     name: "leonardo",
     lastname: "devinci",
-    age: "19",
+    age: function () {
+      let diff = Date.now() - this.calcAge.getTime();
+      let age = new Date(diff);
+      return Math.abs(age.getUTCFullYear() - 1970);
+    },
+    calcAge: new Date(1990, 9, 28),
     birthday: "45/05/3907",
     pets: false,
     nameOfPets: "lili",
     favoritFood: "pizza",
     wildSide: "elle sait rester immobile durant des heures",
-    hobby:"peinture",
-    skills:"Le mime",
-    motivation:"Aucune",
+    hobby: "peinture",
+    skills: "Le mime",
+    motivation: "Aucune",
     picureProfile: "./source/image/users/pictureUser2.jpeg",
     social: {
       linkedin: "lien Linkedin",
@@ -39,7 +49,12 @@ const wildersInfos = [
   },
   {
     name: "Mona Lucie",
-    age: "19",
+    age: function () {
+      let diff = Date.now() - this.calcAge.getTime();
+      let age = new Date(diff);
+      return Math.abs(age.getUTCFullYear() - 1970);
+    },
+    calcAge: new Date(2000, 7, 4),
     birthday: "",
     pets: false,
     nameOfPets: "",
@@ -53,7 +68,12 @@ const wildersInfos = [
   },
   {
     name: "Mona Julie",
-    age: "19",
+    age: function () {
+      let diff = Date.now() - this.calcAge.getTime();
+      let age = new Date(diff);
+      return Math.abs(age.getUTCFullYear() - 1970);
+    },
+    calcAge: new Date(1977, 7, 4),
     birthday: "",
     pets: false,
     nameOfPets: "",
@@ -67,7 +87,12 @@ const wildersInfos = [
   },
   {
     name: "Mona Frack",
-    age: "19",
+    age: function () {
+      let diff = Date.now() - this.calcAge.getTime();
+      let age = new Date(diff);
+      return Math.abs(age.getUTCFullYear() - 1970);
+    },
+    calcAge: new Date(1980, 7, 4),
     birthday: "",
     pets: false,
     nameOfPets: "",
@@ -81,7 +106,12 @@ const wildersInfos = [
   },
   {
     name: "Mona Jacky",
-    age: "19",
+    age: function () {
+      let diff = Date.now() - this.calcAge.getTime();
+      let age = new Date(diff);
+      return Math.abs(age.getUTCFullYear() - 1970);
+    },
+    calcAge: new Date(1980, 7, 4),
     birthday: "",
     pets: false,
     nameOfPets: "",
@@ -95,7 +125,12 @@ const wildersInfos = [
   },
   {
     name: "Mona",
-    age: "19",
+    age: function () {
+      let diff = Date.now() - this.calcAge.getTime();
+      let age = new Date(diff);
+      return Math.abs(age.getUTCFullYear() - 1970);
+    },
+    calcAge: new Date(1980, 7, 4),
     birthday: "",
     pets: false,
     nameOfPets: "",
@@ -131,26 +166,24 @@ function createWildersCard(name, id) {
   cardFront.appendChild(fontTitle);
 
   const cardBack = document.createElement("div");
-  cardBack.setAttribute("class", "back"); 
+  cardBack.setAttribute("class", "back");
   const cardBackContainer = document.createElement("div");
   cardBackContainer.setAttribute("class", "back-container");
   cardBack.appendChild(cardBackContainer);
 
   // content to add
   cardBody.appendChild(cardBack);
-  
 
-//   button plus info back card
+  //   button plus info back card
   const btnBackCard = document.createElement("button");
   btnBackCard.setAttribute("id", `btnProfile${id}`);
-  btnBackCard.setAttribute("class", "btnProfile"); 
+  btnBackCard.setAttribute("class", "btnProfile");
   btnBackCard.textContent = "Plus d'infos";
   cardBackContainer.appendChild(btnBackCard);
 
   const icones = document.createElement("div");
   icones.setAttribute("class", "icones-container");
   cardBackContainer.appendChild(icones);
-
 
   const githubLink = document.createElement("a");
   githubLink.setAttribute("href", "http://google.com");
@@ -185,8 +218,11 @@ function createWildersCard(name, id) {
 }
 
 for (let i = 0; i < wildersInfos.length; i++) {
-    createWildersCard(wildersInfos[i].name, wildersInfos.indexOf(wildersInfos[i]));
-    console.log[i];
+  createWildersCard(
+    wildersInfos[i].name,
+    wildersInfos.indexOf(wildersInfos[i])
+  );
+  console.log[i];
 }
 
 const cards = document.querySelectorAll(".card");
@@ -200,104 +236,87 @@ for (let i = 0; i < cards.length; i++) {
   }
 }
 
-
-
-
 // Modal
 const modal = document.querySelector("#modalUserProfile");
-const modalContent = document.querySelector(".modalContent")
+const modalContent = document.querySelector(".modalContent");
 const btns = document.querySelectorAll(".btnProfile");
 const span = document.querySelector(".close");
 for (let i = 0; i < btns.length; i++) {
-        
-        console.log(btns[i]);
-        btns[i].addEventListener("click", function () {
-        modal.style.display = "block";
-        });
-        span.addEventListener("click", function () {
-        modal.style.display = "none";
-        deleteModalContent()
-        });
-        modal.addEventListener("click", function () {
-        modal.style.display = "none";
-        deleteModalContent()
-        });
-}
-    
-
-function creatModalContent(id){
-
-    // Picture Profile 
-    const profileImage = document.createElement("div")
-    profileImage.setAttribute("class", "imageModal")
-    profileImage.style.backgroundImage = `url('${wildersInfos[id].picureProfile}')`; 
-    modalContent.appendChild(profileImage)
-    // Name User
-    const titleModal = document.createElement("h2")
-    titleModal.textContent = wildersInfos[id].name
-    modalContent.appendChild(titleModal)
-    // Age User
-    const ageUser = document.createElement("p")
-    ageUser.textContent = wildersInfos[id].age
-    modalContent.appendChild(ageUser)
-    // birthday User
-    const birthdayUser = document.createElement("p")
-    birthdayUser.textContent = wildersInfos[id].birthday
-    modalContent.appendChild(birthdayUser)
-    // pets User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
-    // name of pets User
-    const namePetsUser = document.createElement("p")
-    namePetsUser.textContent = wildersInfos[id].nameOfPets
-    modalContent.appendChild(namePetsUser)
-    // favorite foods User
-    const favoriteUserFood = document.createElement("p")
-    favoriteUserFood.textContent = wildersInfos[id].favoritFood
-    modalContent.appendChild(favoriteUserFood)
-    // wild side User
-    const wildSideUser = document.createElement("p")
-    wildSideUser.textContent = wildersInfos[id].wildSide
-    modalContent.appendChild(wildSideUser)
-    // hobby User
-    const hobbyUser = document.createElement("p")
-    hobbyUser.textContent = wildersInfos[id].hobby
-    modalContent.appendChild(hobbyUser)
-    // skills User
-    const skillsUser = document.createElement("p")
-    skillsUser.textContent = wildersInfos[id].skills
-    modalContent.appendChild(skillsUser)
-    // motivation User
-    const motivationUser = document.createElement("p")
-    motivationUser.textContent = wildersInfos[id].motivation
-    modalContent.appendChild(motivationUser)
-   
-    
-
-
-    
-
-
-
-
+  console.log(btns[i]);
+  btns[i].addEventListener("click", function () {
+    modal.style.display = "block";
+  });
+  span.addEventListener("click", function () {
+    modal.style.display = "none";
+    deleteModalContent();
+  });
+  modal.addEventListener("click", function () {
+    modal.style.display = "none";
+    deleteModalContent();
+  });
 }
 
-function deleteModalContent(){
-    while (modalContent.firstChild){
-        modalContent.removeChild(modalContent.lastChild)
-    }
+function creatModalContent(id) {
+  // Picture Profile
+  const profileImage = document.createElement("div");
+  profileImage.setAttribute("class", "imageModal");
+  profileImage.style.backgroundImage = `url('${wildersInfos[id].picureProfile}')`;
+  modalContent.appendChild(profileImage);
+  // Name User
+  const titleModal = document.createElement("h2");
+  titleModal.textContent = wildersInfos[id].name;
+  modalContent.appendChild(titleModal);
+  // Age User
+  const ageUser = document.createElement("p");
+  ageUser.textContent = wildersInfos[id].age();
+  modalContent.appendChild(ageUser);
+  // birthday User
+  const birthdayUser = document.createElement("p");
+  birthdayUser.textContent = wildersInfos[id].birthday;
+  modalContent.appendChild(birthdayUser);
+  // pets User
+  const petsUser = document.createElement("p");
+  petsUser.textContent = wildersInfos[id].pets;
+  modalContent.appendChild(petsUser);
+  // name of pets User
+  const namePetsUser = document.createElement("p");
+  namePetsUser.textContent = wildersInfos[id].nameOfPets;
+  modalContent.appendChild(namePetsUser);
+  // favorite foods User
+  const favoriteUserFood = document.createElement("p");
+  favoriteUserFood.textContent = wildersInfos[id].favoritFood;
+  modalContent.appendChild(favoriteUserFood);
+  // wild side User
+  const wildSideUser = document.createElement("p");
+  wildSideUser.textContent = wildersInfos[id].wildSide;
+  modalContent.appendChild(wildSideUser);
+  // hobby User
+  const hobbyUser = document.createElement("p");
+  hobbyUser.textContent = wildersInfos[id].hobby;
+  modalContent.appendChild(hobbyUser);
+  // skills User
+  const skillsUser = document.createElement("p");
+  skillsUser.textContent = wildersInfos[id].skills;
+  modalContent.appendChild(skillsUser);
+  // motivation User
+  const motivationUser = document.createElement("p");
+  motivationUser.textContent = wildersInfos[id].motivation;
+  modalContent.appendChild(motivationUser);
 }
 
+function deleteModalContent() {
+  while (modalContent.firstChild) {
+    modalContent.removeChild(modalContent.lastChild);
+  }
+}
 
-const allBtn = document.querySelectorAll("button")
-for(let i=0; i<allBtn.length; i++){
-    allBtn[i].addEventListener('click', function(){
-        
-        creatModalContent(i)
-    })
+const allBtn = document.querySelectorAll("button");
+for (let i = 0; i < allBtn.length; i++) {
+  allBtn[i].addEventListener("click", function () {
+    creatModalContent(i);
+  });
 }
 
 // copyright year
-let currentYear = (new Date()).getFullYear();
+let currentYear = new Date().getFullYear();
 document.querySelector(".copyrightYear").innerHTML = currentYear;
