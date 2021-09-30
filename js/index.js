@@ -496,13 +496,11 @@ function createWildersCard(name, id) {
 
 for (let i = 0; i < wildersInfos.length; i++) {
     createWildersCard(wildersInfos[i].name, wildersInfos.indexOf(wildersInfos[i]));
-    console.log[i];
 }
 
-const cards = document.querySelectorAll(".card");
-console.log(cards);
-console.log(cards.length);
 
+
+const cards = document.querySelectorAll(".card");
 for (let i = 0; i < cards.length; i++) {
   cards[i].addEventListener("click", flipCard);
   function flipCard() {
@@ -520,7 +518,6 @@ const btns = document.querySelectorAll(".btnProfile");
 const span = document.querySelector(".close");
 for (let i = 0; i < btns.length; i++) {
         
-        console.log(btns[i]);
         btns[i].addEventListener("click", function () {
         modal.style.display = "block";
         });
