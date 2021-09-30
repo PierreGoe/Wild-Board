@@ -1,5 +1,6 @@
 :root {
   --radiusCard: 5%;
+  --colorWildCodeSchool : #f76c6c;
 }
 
 .card {
@@ -105,8 +106,8 @@ button {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  background-color: white/* Fallback color */
+  
 }
 
 /* Modal Content/Box */
@@ -120,7 +121,7 @@ button {
 
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: var(--colorWildCodeSchool);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -131,4 +132,12 @@ button {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+
+.imageModal{
+    height: 300px;
+    width: 200px;
+    margin: auto;
+
 }

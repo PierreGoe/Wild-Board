@@ -1,12 +1,36 @@
 const wildersInfos = [
   {
-    name: "Mona Lisa",
+    name: "Mona",
+    lastname: "Lisa",
     age: "19",
-    birthday: "",
+    birthday: "45/05/3907",
     pets: false,
-    nameOfPets: "",
-    favoritFood: "",
-    wildSide: "",
+    nameOfPets: "lili",
+    favoritFood: "pizza",
+    wildSide: "elle sait rester immobile durant des heures",
+    hobby:"peinture",
+    skills:"Le mime",
+    motivation:"Aucune",
+    picureProfile: "./source/image/users/pictureUser1.jpg",
+    social: {
+      linkedin: "lien Linkedin",
+      gitHub: "lien gitHub",
+      cvUser: "lien cv",
+    },
+  },
+  {
+    name: "leonardo",
+    lastname: "devinci",
+    age: "19",
+    birthday: "45/05/3907",
+    pets: false,
+    nameOfPets: "lili",
+    favoritFood: "pizza",
+    wildSide: "elle sait rester immobile durant des heures",
+    hobby:"peinture",
+    skills:"Le mime",
+    motivation:"Aucune",
+    picureProfile: "./source/image/users/pictureUser2.jpeg",
     social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -97,7 +121,7 @@ function createWildersCard(name, id) {
   // content to add
 
   const cardImage = document.createElement("img");
-  cardImage.setAttribute("src", "source/image/pictureUser1.jpg");
+  cardImage.setAttribute("src", "source/image/users/pictureUser1.jpg");
   cardImage.setAttribute("class", "pictureProfil");
   cardFront.appendChild(cardImage);
 
@@ -199,9 +223,20 @@ for(let i=0; i<btns.length; i++){
 
 function creatModalContent(id){
 
-    const titleModal = document.createElement("h1")
+
+    // Name User
+    const titleModal = document.createElement("h2")
     titleModal.textContent = wildersInfos[id].name
     modalContent.appendChild(titleModal)
+
+    // Picture Profile 
+    const profileImage = document.createElement("div")
+    profileImage.setAttribute("class", "imageModal")
+    profileImage.style.backgroundImage = `url('${wildersInfos[id].picureProfile}')`; 
+    modalContent.appendChild(profileImage)
+
+
+
 
 }
 
