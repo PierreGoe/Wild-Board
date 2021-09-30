@@ -628,18 +628,18 @@ const modalContent = document.querySelector(".modalContent")
 const btns = document.querySelectorAll(".btnProfile");
 const span = document.querySelector(".close");
 for (let i = 0; i < btns.length; i++) {
-  
-  btns[i].addEventListener("click", function () {
-  modal.style.display = "block";
-});
-span.addEventListener("click", function() {
-  modal.style.display = "none";
-  deleteModalContent()
-});
-modal.addEventListener("click", function() {
-  modal.style.display = "none";
-  deleteModalContent()
-});
+
+    btns[i].addEventListener("click", function() {
+        modal.style.display = "block";
+    });
+    span.addEventListener("click", function() {
+        modal.style.display = "none";
+        deleteModalContent()
+    });
+    modal.addEventListener("click", function() {
+        modal.style.display = "none";
+        deleteModalContent()
+    });
 }
 
 

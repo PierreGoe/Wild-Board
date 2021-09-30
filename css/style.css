@@ -125,8 +125,9 @@ h1 {
 }
 
 .pictureProfil {
-    width: 200px;
-    height: 80%;
+  width: 200px;
+  height: 80%;
+  object-fit: cover;
 }
 
 .front,
@@ -211,4 +212,5 @@ button {
     height: 300px;
     width: 200px;
     margin: auto;
+    background-size: cover;
 }
