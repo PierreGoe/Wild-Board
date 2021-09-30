@@ -238,7 +238,55 @@ function creatModalContent(id){
     const ageUser = document.createElement("p")
     ageUser.textContent = wildersInfos[id].age
     modalContent.appendChild(ageUser)
-
+    // birthday User
+    const birthdayUser = document.createElement("p")
+    birthdayUser.textContent = wildersInfos[id].birthday
+    modalContent.appendChild(birthdayUser)
+    // pets User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    // name of pets User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    // favorite foods User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    // wild side User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    // hobby User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    // skills User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    // motivation User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    // picture User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    // linkedin User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    // git hub User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    // Cv User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    
 
 
     
