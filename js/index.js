@@ -1,6 +1,44 @@
 const wildersInfos = [
   {
-    name: "Mona Lisa",
+    name: "Mona",
+    lastname: "Lisa",
+    age: "19",
+    birthday: "45/05/3907",
+    pets: false,
+    nameOfPets: "lili",
+    favoritFood: "pizza",
+    wildSide: "elle sait rester immobile durant des heures",
+    hobby:"peinture",
+    skills:"Le mime",
+    motivation:"Aucune",
+    picureProfile: "./source/image/users/pictureUser1.jpg",
+    social: {
+      linkedin: "lien Linkedin",
+      gitHub: "lien gitHub",
+      cvUser: "lien cv",
+    },
+  },
+  {
+    name: "leonardo",
+    lastname: "devinci",
+    age: "19",
+    birthday: "45/05/3907",
+    pets: false,
+    nameOfPets: "lili",
+    favoritFood: "pizza",
+    wildSide: "elle sait rester immobile durant des heures",
+    hobby:"peinture",
+    skills:"Le mime",
+    motivation:"Aucune",
+    picureProfile: "./source/image/users/pictureUser2.jpeg",
+    social: {
+      linkedin: "lien Linkedin",
+      gitHub: "lien gitHub",
+      cvUser: "lien cv",
+    },
+  },
+  {
+    name: "Mona Lucie",
     age: "19",
     birthday: "",
     pets: false,
@@ -14,7 +52,7 @@ const wildersInfos = [
     },
   },
   {
-    name: "Mona Lisa",
+    name: "Mona Julie",
     age: "19",
     birthday: "",
     pets: false,
@@ -28,7 +66,7 @@ const wildersInfos = [
     },
   },
   {
-    name: "Mona Lisa",
+    name: "Mona Frack",
     age: "19",
     birthday: "",
     pets: false,
@@ -42,21 +80,7 @@ const wildersInfos = [
     },
   },
   {
-    name: "Mona Lisa",
-    age: "19",
-    birthday: "",
-    pets: false,
-    nameOfPets: "",
-    favoritFood: "",
-    wildSide: "",
-    social: {
-      linkedin: "lien Linkedin",
-      gitHub: "lien gitHub",
-      cvUser: "lien cv",
-    },
-  },
-  {
-    name: "Mona Lisa",
+    name: "Mona Jacky",
     age: "19",
     birthday: "",
     pets: false,
@@ -97,7 +121,7 @@ function createWildersCard(name, id) {
   // content to add
 
   const cardImage = document.createElement("img");
-  cardImage.setAttribute("src", "source/image/pictureUser1.jpg");
+  cardImage.setAttribute("src", "source/image/users/pictureUser1.jpg");
   cardImage.setAttribute("class", "pictureProfil");
   cardFront.appendChild(cardImage);
 
@@ -107,48 +131,57 @@ function createWildersCard(name, id) {
   cardFront.appendChild(fontTitle);
 
   const cardBack = document.createElement("div");
-  cardBack.setAttribute("class", "back");
+  cardBack.setAttribute("class", "back"); 
+  const cardBackContainer = document.createElement("div");
+  cardBackContainer.setAttribute("class", "back-container");
+  cardBack.appendChild(cardBackContainer);
+
   // content to add
   cardBody.appendChild(cardBack);
   const backTitle = document.createElement("h2");
   backTitle.textContent = name;
   cardBack.appendChild(backTitle);
-  const btnBackCard = document.createElement("button")
-  btnBackCard.setAttribute("id", `btnProfile${id}`)
-  btnBackCard.setAttribute("class", "btnProfile")
-  cardBack.appendChild(btnBackCard)  
 
-  const buttons = document.createElement("div");
-  cardBack.appendChild(buttons);
+//   button plus info back card
+  const btnBackCard = document.createElement("button");
+  btnBackCard.setAttribute("id", `btnProfile${id}`);
+  btnBackCard.setAttribute("class", "btnProfile"); 
+  btnBackCard.textContent = "Plus d'infos";
+  cardBackContainer.appendChild(btnBackCard);
+
+  const icones = document.createElement("div");
+  icones.setAttribute("class", "icones-container");
+  cardBackContainer.appendChild(icones);
+
 
   const githubLink = document.createElement("a");
   githubLink.setAttribute("href", "http://google.com");
-  buttons.appendChild(githubLink);
+  icones.appendChild(githubLink);
 
   const gitHubLogo = document.createElement("img");
   gitHubLogo.setAttribute(
     "src",
-    "https://img.icons8.com/material-outlined/24/000000/github.png"
+    "https://img.icons8.com/material-outlined/30/000000/github.png"
   );
   githubLink.appendChild(gitHubLogo);
 
   const linkedinLink = document.createElement("a");
   linkedinLink.setAttribute("href", "http://google.com");
-  buttons.appendChild(linkedinLink);
+  icones.appendChild(linkedinLink);
   const linkedinLogo = document.createElement("img");
   linkedinLogo.setAttribute(
     "src",
-    "https://img.icons8.com/material-outlined/24/000000/linkedin--v1.png"
+    "https://img.icons8.com/material-outlined/30/000000/linkedin--v1.png"
   );
   linkedinLink.appendChild(linkedinLogo);
 
   const cvLink = document.createElement("a");
   cvLink.setAttribute("href", "http://google.com");
-  buttons.appendChild(cvLink);
+  icones.appendChild(cvLink);
   const cvLogo = document.createElement("img");
   cvLogo.setAttribute(
     "src",
-    "https://img.icons8.com/material-rounded/24/000000/parse-from-clipboard.png"
+    "https://img.icons8.com/material-rounded/30/000000/parse-from-clipboard.png"
   );
   cvLink.appendChild(cvLogo);
 }
@@ -174,36 +207,54 @@ for (let i = 0; i < cards.length; i++) {
 
 // Modal
 const modal = document.querySelector("#modalUserProfile");
+const modalContent = document.querySelector(".modalContent")
 const btns = document.querySelectorAll(".btnProfile");
 const span = document.querySelector(".close");
-for(let i=0; i<btns.length; i++){
-    console.log(btns[i])
-    btns[i].addEventListener('click', function(){
-        modal.style.display = "block";
+for (let i = 0; i < btns.length; i++) {
+    console.log(btns[i]);
+    btns[i].addEventListener("click", function () {
+      modal.style.display = "block";
     });
-    span.addEventListener('click', function(){
-        modal.style.display = "none";
+    span.addEventListener("click", function () {
+      modal.style.display = "none";
     });
-    modal.addEventListener('click', function(){
-        modal.style.display = "none";
+    modal.addEventListener("click", function () {
+      modal.style.display = "none";
     });
-}
+  }
     
 
 
 
-// function createWildersModal(id){
-//     const modal = document.querySelector("#modalUserProfile");
-//     const idUser = document.createElement('p');
-//     idUser.innerHTML= id;
-//     modal.appendChild(idUser)
-// }
 
 
 function creatModalContent(id){
-    console.log(wildersInfos[id].name)
+
+    // Picture Profile 
+    const profileImage = document.createElement("div")
+    profileImage.setAttribute("class", "imageModal")
+    profileImage.style.backgroundImage = `url('${wildersInfos[id].picureProfile}')`; 
+    modalContent.appendChild(profileImage)
+    // Name User
+    const titleModal = document.createElement("h2")
+    titleModal.textContent = wildersInfos[id].name
+    modalContent.appendChild(titleModal)
+
+
+
+    
+
+
+
 
 }
+
+function deleteModalContent(){
+    while (modalContent.firstChild){
+        modalContent.removeChild(modalContent.lastChild)
+    }
+}
+
 
 const allBtn = document.querySelectorAll("button")
 for(let i=0; i<allBtn.length; i++){
