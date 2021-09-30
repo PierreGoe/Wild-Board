@@ -1,226 +1,3 @@
-
-
-function createWildersCard(name, id) {
-  const cardContainer = document.querySelector(".card-container");
-
-  const cardBody = document.createElement("article");
-  cardBody.setAttribute("class", "card");
-  cardContainer.appendChild(cardBody);
-
-  const cardFront = document.createElement("div");
-  cardFront.setAttribute("class", "front");
-  // content to add
-
-  const cardImage = document.createElement("img");
-  cardImage.setAttribute("src", "source/image/users/pictureUser1.jpg");
-  cardImage.setAttribute("class", "pictureProfil");
-  cardFront.appendChild(cardImage);
-
-  cardBody.appendChild(cardFront);
-  const fontTitle = document.createElement("h2");
-  fontTitle.textContent = name;
-  cardFront.appendChild(fontTitle);
-
-  const cardBack = document.createElement("div");
-  cardBack.setAttribute("class", "back"); 
-  const cardBackContainer = document.createElement("div");
-  cardBackContainer.setAttribute("class", "back-container");
-  cardBack.appendChild(cardBackContainer);
-
-  // content to add
-  cardBody.appendChild(cardBack);
-  
-
-//   button plus info back card
-  const btnBackCard = document.createElement("button");
-  btnBackCard.setAttribute("id", `btnProfile${id}`);
-  btnBackCard.setAttribute("class", "btnProfile"); 
-  btnBackCard.textContent = "Plus d'infos";
-  cardBackContainer.appendChild(btnBackCard);
-
-  const icones = document.createElement("div");
-  icones.setAttribute("class", "icones-container");
-  cardBackContainer.appendChild(icones);
-
-
-  const githubLink = document.createElement("a");
-  githubLink.setAttribute("href", "http://google.com");
-  icones.appendChild(githubLink);
-
-  const gitHubLogo = document.createElement("img");
-  gitHubLogo.setAttribute(
-    "src",
-    "https://img.icons8.com/material-outlined/30/000000/github.png"
-  );
-  githubLink.appendChild(gitHubLogo);
-
-  const linkedinLink = document.createElement("a");
-  linkedinLink.setAttribute("href", "http://google.com");
-  icones.appendChild(linkedinLink);
-  const linkedinLogo = document.createElement("img");
-  linkedinLogo.setAttribute(
-    "src",
-    "https://img.icons8.com/material-outlined/30/000000/linkedin--v1.png"
-  );
-  linkedinLink.appendChild(linkedinLogo);
-
-  const cvLink = document.createElement("a");
-  cvLink.setAttribute("href", "http://google.com");
-  icones.appendChild(cvLink);
-  const cvLogo = document.createElement("img");
-  cvLogo.setAttribute(
-    "src",
-    "https://img.icons8.com/material-rounded/30/000000/parse-from-clipboard.png"
-  );
-  cvLink.appendChild(cvLogo);
-}
-
-for (let i = 0; i < wildersInfos.length; i++) {
-    createWildersCard(wildersInfos[i].name, wildersInfos.indexOf(wildersInfos[i]));
-    console.log[i];
-}
-
-const cards = document.querySelectorAll(".card");
-console.log(cards);
-console.log(cards.length);
-
-for (let i = 0; i < cards.length; i++) {
-  cards[i].addEventListener("click", flipCard);
-  function flipCard() {
-    cards[i].classList.toggle("flipCard");
-  }
-}
-
-
-
-
-// Modal
-const modal = document.querySelector("#modalUserProfile");
-const modalContent = document.querySelector(".modalContent")
-const btns = document.querySelectorAll(".btnProfile");
-const span = document.querySelector(".close");
-for (let i = 0; i < btns.length; i++) {
-        
-        console.log(btns[i]);
-        btns[i].addEventListener("click", function () {
-        modal.style.display = "block";
-        });
-        span.addEventListener("click", function () {
-        modal.style.display = "none";
-        deleteModalContent()
-        });
-        modal.addEventListener("click", function () {
-        modal.style.display = "none";
-        deleteModalContent()
-        });
-}
-    
-
-function creatModalContent(id){
-
-    // Picture Profile 
-    const profileImage = document.createElement("div")
-    profileImage.setAttribute("class", "imageModal")
-    profileImage.style.backgroundImage = `url('${wildersInfos[id].picureProfile}')`; 
-    modalContent.appendChild(profileImage)
-    // Name User
-    const titleModal = document.createElement("h2")
-    titleModal.textContent = wildersInfos[id].name
-    modalContent.appendChild(titleModal)
-    // Age User
-    const ageUser = document.createElement("p")
-    ageUser.textContent = wildersInfos[id].age
-    modalContent.appendChild(ageUser)
-    // birthday User
-    const birthdayUser = document.createElement("p")
-    birthdayUser.textContent = wildersInfos[id].birthday
-    modalContent.appendChild(birthdayUser)
-    // pets User
-    const petsUser = document.createElement("p")
-    petsUser.textContent = wildersInfos[id].pets
-    modalContent.appendChild(petsUser)
-    // name of pets User
-    const namePetsUser = document.createElement("p")
-    namePetsUser.textContent = wildersInfos[id].nameOfPets
-    modalContent.appendChild(namePetsUser)
-    // favorite foods User
-    const favoriteUserFood = document.createElement("p")
-    favoriteUserFood.textContent = wildersInfos[id].favoritFood
-    modalContent.appendChild(favoriteUserFood)
-    // wild side User
-    const wildSideUser = document.createElement("p")
-    wildSideUser.textContent = wildersInfos[id].wildSide
-    modalContent.appendChild(wildSideUser)
-    // hobby User
-    const hobbyUser = document.createElement("p")
-    hobbyUser.textContent = wildersInfos[id].hobby
-    modalContent.appendChild(hobbyUser)
-    // skills User
-    const skillsUser = document.createElement("p")
-    skillsUser.textContent = wildersInfos[id].skills
-    modalContent.appendChild(skillsUser)
-    // motivation User
-    const motivationUser = document.createElement("p");
-    motivationUser.textContent = wildersInfos[id].motivation;
-    modalContent.appendChild(motivationUser);
-    // linkedin User
-    const linkedinUser = document.createElement("a");
-    linkedinUser.setAttribute("href", wildersInfos[id].social.linkedin);
-    linkedinUser.setAttribute("target", "_blank");
-    const linkedinLogo = document.createElement("img");
-    linkedinLogo.setAttribute("src", "https://img.icons8.com/material-outlined/30/000000/linkedin--v1.png");
-    linkedinUser.innerHTML = linkedinLogo;
-    modalContent.appendChild(linkedinUser);
-    // git hub User
-    const githubUser = document.createElement("a");
-    githubUser.setAttribute("href", wildersInfos[id].social.gitHub);
-    githubUser.setAttribute("target", "_blank");
-    const githubLogo = document.createElement("img");
-    githubLogo.setAttribute("src", "https://img.icons8.com/material-outlined/30/000000/github.png");
-    githubLogo.innerHTML = githubLogo;
-    modalContent.appendChild(githubUser);
-    // Cv User
-    const curriculumUser = document.createElement("a");
-    curriculumUser.setAttribute("href", wildersInfos[id].social.cvUser);
-    curriculumUser.setAttribute("target", "_blank");
-    const cvLogo = document.createElement("img");
-    cvLogo.setAttribute("src", "https://img.icons8.com/material-rounded/30/000000/parse-from-clipboard.png");
-    curriculumUser.innerHTML = cvLogo;
-    modalContent.appendChild(curriculumUser);
-    
-
-
-    
-
-
-
-
-}
-
-function deleteModalContent(){
-    while (modalContent.firstChild){
-        modalContent.removeChild(modalContent.lastChild)
-    }
-}
-
-
-const allBtn = document.querySelectorAll("button")
-for(let i=0; i<allBtn.length; i++){
-    allBtn[i].addEventListener('click', function(){
-        
-        creatModalContent(i)
-    })
-}
-
-// copyright year
-let currentYear = (new Date()).getFullYear();
-document.querySelector(".copyrightYear").innerHTML = currentYear;
-
-
-
-
-
-
 const wildersInfos = [
     {
       name: "Mona",
@@ -641,3 +418,225 @@ const wildersInfos = [
       },
     },
 ];
+
+function createWildersCard(name, id) {
+  const cardContainer = document.querySelector(".card-container");
+
+  const cardBody = document.createElement("article");
+  cardBody.setAttribute("class", "card");
+  cardContainer.appendChild(cardBody);
+
+  const cardFront = document.createElement("div");
+  cardFront.setAttribute("class", "front");
+  // content to add
+
+  const cardImage = document.createElement("img");
+  cardImage.setAttribute("src", "source/image/users/pictureUser1.jpg");
+  cardImage.setAttribute("class", "pictureProfil");
+  cardFront.appendChild(cardImage);
+
+  cardBody.appendChild(cardFront);
+  const fontTitle = document.createElement("h2");
+  fontTitle.textContent = name;
+  cardFront.appendChild(fontTitle);
+
+  const cardBack = document.createElement("div");
+  cardBack.setAttribute("class", "back"); 
+  const cardBackContainer = document.createElement("div");
+  cardBackContainer.setAttribute("class", "back-container");
+  cardBack.appendChild(cardBackContainer);
+
+  // content to add
+  cardBody.appendChild(cardBack);
+  
+
+//   button plus info back card
+  const btnBackCard = document.createElement("button");
+  btnBackCard.setAttribute("id", `btnProfile${id}`);
+  btnBackCard.setAttribute("class", "btnProfile"); 
+  btnBackCard.textContent = "Plus d'infos";
+  cardBackContainer.appendChild(btnBackCard);
+
+  const icones = document.createElement("div");
+  icones.setAttribute("class", "icones-container");
+  cardBackContainer.appendChild(icones);
+
+
+  const githubLink = document.createElement("a");
+  githubLink.setAttribute("href", "http://google.com");
+  icones.appendChild(githubLink);
+
+  const gitHubLogo = document.createElement("img");
+  gitHubLogo.setAttribute(
+    "src",
+    "https://img.icons8.com/material-outlined/30/000000/github.png"
+  );
+  githubLink.appendChild(gitHubLogo);
+
+  const linkedinLink = document.createElement("a");
+  linkedinLink.setAttribute("href", "http://google.com");
+  icones.appendChild(linkedinLink);
+  const linkedinLogo = document.createElement("img");
+  linkedinLogo.setAttribute(
+    "src",
+    "https://img.icons8.com/material-outlined/30/000000/linkedin--v1.png"
+  );
+  linkedinLink.appendChild(linkedinLogo);
+
+  const cvLink = document.createElement("a");
+  cvLink.setAttribute("href", "http://google.com");
+  icones.appendChild(cvLink);
+  const cvLogo = document.createElement("img");
+  cvLogo.setAttribute(
+    "src",
+    "https://img.icons8.com/material-rounded/30/000000/parse-from-clipboard.png"
+  );
+  cvLink.appendChild(cvLogo);
+}
+
+for (let i = 0; i < wildersInfos.length; i++) {
+    createWildersCard(wildersInfos[i].name, wildersInfos.indexOf(wildersInfos[i]));
+    console.log[i];
+}
+
+const cards = document.querySelectorAll(".card");
+console.log(cards);
+console.log(cards.length);
+
+for (let i = 0; i < cards.length; i++) {
+  cards[i].addEventListener("click", flipCard);
+  function flipCard() {
+    cards[i].classList.toggle("flipCard");
+  }
+}
+
+
+
+
+// Modal
+const modal = document.querySelector("#modalUserProfile");
+const modalContent = document.querySelector(".modalContent")
+const btns = document.querySelectorAll(".btnProfile");
+const span = document.querySelector(".close");
+for (let i = 0; i < btns.length; i++) {
+        
+        console.log(btns[i]);
+        btns[i].addEventListener("click", function () {
+        modal.style.display = "block";
+        });
+        span.addEventListener("click", function () {
+        modal.style.display = "none";
+        deleteModalContent()
+        });
+        modal.addEventListener("click", function () {
+        modal.style.display = "none";
+        deleteModalContent()
+        });
+}
+    
+
+function creatModalContent(id){
+
+    // Picture Profile 
+    const profileImage = document.createElement("div")
+    profileImage.setAttribute("class", "imageModal")
+    profileImage.style.backgroundImage = `url('${wildersInfos[id].picureProfile}')`; 
+    modalContent.appendChild(profileImage)
+    // Name User
+    const titleModal = document.createElement("h2")
+    titleModal.textContent = wildersInfos[id].name
+    modalContent.appendChild(titleModal)
+    // Age User
+    const ageUser = document.createElement("p")
+    ageUser.textContent = wildersInfos[id].age
+    modalContent.appendChild(ageUser)
+    // birthday User
+    const birthdayUser = document.createElement("p")
+    birthdayUser.textContent = wildersInfos[id].birthday
+    modalContent.appendChild(birthdayUser)
+    // pets User
+    const petsUser = document.createElement("p")
+    petsUser.textContent = wildersInfos[id].pets
+    modalContent.appendChild(petsUser)
+    // name of pets User
+    const namePetsUser = document.createElement("p")
+    namePetsUser.textContent = wildersInfos[id].nameOfPets
+    modalContent.appendChild(namePetsUser)
+    // favorite foods User
+    const favoriteUserFood = document.createElement("p")
+    favoriteUserFood.textContent = wildersInfos[id].favoritFood
+    modalContent.appendChild(favoriteUserFood)
+    // wild side User
+    const wildSideUser = document.createElement("p")
+    wildSideUser.textContent = wildersInfos[id].wildSide
+    modalContent.appendChild(wildSideUser)
+    // hobby User
+    const hobbyUser = document.createElement("p")
+    hobbyUser.textContent = wildersInfos[id].hobby
+    modalContent.appendChild(hobbyUser)
+    // skills User
+    const skillsUser = document.createElement("p")
+    skillsUser.textContent = wildersInfos[id].skills
+    modalContent.appendChild(skillsUser)
+    // motivation User
+    const motivationUser = document.createElement("p");
+    motivationUser.textContent = wildersInfos[id].motivation;
+    modalContent.appendChild(motivationUser);
+    // linkedin User
+    const linkedinUser = document.createElement("a");
+    linkedinUser.setAttribute("href", wildersInfos[id].social.linkedin);
+    linkedinUser.setAttribute("target", "_blank");
+    const linkedinLogo = document.createElement("img");
+    linkedinLogo.setAttribute("src", "https://img.icons8.com/material-outlined/30/000000/linkedin--v1.png");
+    linkedinUser.innerHTML = linkedinLogo;
+    modalContent.appendChild(linkedinUser);
+    // git hub User
+    const githubUser = document.createElement("a");
+    githubUser.setAttribute("href", wildersInfos[id].social.gitHub);
+    githubUser.setAttribute("target", "_blank");
+    const githubLogo = document.createElement("img");
+    githubLogo.setAttribute("src", "https://img.icons8.com/material-outlined/30/000000/github.png");
+    githubLogo.innerHTML = githubLogo;
+    modalContent.appendChild(githubUser);
+    // Cv User
+    const curriculumUser = document.createElement("a");
+    curriculumUser.setAttribute("href", wildersInfos[id].social.cvUser);
+    curriculumUser.setAttribute("target", "_blank");
+    const cvLogo = document.createElement("img");
+    cvLogo.setAttribute("src", "https://img.icons8.com/material-rounded/30/000000/parse-from-clipboard.png");
+    curriculumUser.innerHTML = cvLogo;
+    modalContent.appendChild(curriculumUser);
+    
+
+
+    
+
+
+
+
+}
+
+function deleteModalContent(){
+    while (modalContent.firstChild){
+        modalContent.removeChild(modalContent.lastChild)
+    }
+}
+
+
+const allBtn = document.querySelectorAll("button")
+for(let i=0; i<allBtn.length; i++){
+    allBtn[i].addEventListener('click', function(){
+        
+        creatModalContent(i)
+    })
+}
+
+// copyright year
+let currentYear = (new Date()).getFullYear();
+document.querySelector(".copyrightYear").innerHTML = currentYear;
+
+
+
+
+
+
