@@ -108,54 +108,63 @@ function createWildersCard(name, id) {
 
   const cardBack = document.createElement("div");
   cardBack.setAttribute("class", "back");
+  const cardBackContainer = document.createElement("div");
+  cardBackContainer.setAttribute("class", "back-container");
+  cardBack.appendChild(cardBackContainer);
+
   // content to add
   cardBody.appendChild(cardBack);
-  const backTitle = document.createElement("h2");
-  backTitle.textContent = name;
-  cardBack.appendChild(backTitle);
-  const btnBackCard = document.createElement("button")
-  btnBackCard.setAttribute("id", `btnProfile${id}`)
-  btnBackCard.setAttribute("class", "btnProfile")
-  cardBack.appendChild(btnBackCard)  
+  // const backTitle = document.createElement("h2");
+  // backTitle.textContent = name;
+  // cardBack.appendChild(backTitle);
+  const btnBackCard = document.createElement("button");
+  btnBackCard.setAttribute("id", `btnProfile${id}`);
+  btnBackCard.setAttribute("class", "btnProfile");
+  btnBackCard.textContent = "Plus d'infos";
+  cardBackContainer.appendChild(btnBackCard);
 
-  const buttons = document.createElement("div");
-  cardBack.appendChild(buttons);
+  const icones = document.createElement("div");
+  icones.setAttribute("class", "icones-container");
+  cardBackContainer.appendChild(icones);
 
   const githubLink = document.createElement("a");
   githubLink.setAttribute("href", "http://google.com");
-  buttons.appendChild(githubLink);
+  icones.appendChild(githubLink);
 
   const gitHubLogo = document.createElement("img");
   gitHubLogo.setAttribute(
     "src",
-    "https://img.icons8.com/material-outlined/24/000000/github.png"
+    "https://img.icons8.com/material-outlined/30/000000/github.png"
   );
   githubLink.appendChild(gitHubLogo);
 
   const linkedinLink = document.createElement("a");
   linkedinLink.setAttribute("href", "http://google.com");
-  buttons.appendChild(linkedinLink);
+  icones.appendChild(linkedinLink);
   const linkedinLogo = document.createElement("img");
   linkedinLogo.setAttribute(
     "src",
-    "https://img.icons8.com/material-outlined/24/000000/linkedin--v1.png"
+    "https://img.icons8.com/material-outlined/30/000000/linkedin--v1.png"
   );
   linkedinLink.appendChild(linkedinLogo);
 
   const cvLink = document.createElement("a");
   cvLink.setAttribute("href", "http://google.com");
-  buttons.appendChild(cvLink);
+  icones.appendChild(cvLink);
   const cvLogo = document.createElement("img");
   cvLogo.setAttribute(
     "src",
-    "https://img.icons8.com/material-rounded/24/000000/parse-from-clipboard.png"
+    "https://img.icons8.com/material-rounded/30/000000/parse-from-clipboard.png"
   );
   cvLink.appendChild(cvLogo);
 }
 
 for (let i = 0; i < wildersInfos.length; i++) {
-    createWildersCard(wildersInfos[i].name, wildersInfos.indexOf(wildersInfos[i]));
-    console.log[i];
+  createWildersCard(
+    wildersInfos[i].name,
+    wildersInfos.indexOf(wildersInfos[i])
+  );
+  console.log[i];
 }
 
 const cards = document.querySelectorAll(".card");
@@ -169,28 +178,22 @@ for (let i = 0; i < cards.length; i++) {
   }
 }
 
-
-
-
 // Modal
 const modal = document.querySelector("#modalUserProfile");
 const btns = document.querySelectorAll(".btnProfile");
 const span = document.querySelector(".close");
-for(let i=0; i<btns.length; i++){
-    console.log(btns[i])
-    btns[i].addEventListener('click', function(){
-        modal.style.display = "block";
-    });
-    span.addEventListener('click', function(){
-        modal.style.display = "none";
-    });
-    modal.addEventListener('click', function(){
-        modal.style.display = "none";
-    });
+for (let i = 0; i < btns.length; i++) {
+  console.log(btns[i]);
+  btns[i].addEventListener("click", function () {
+    modal.style.display = "block";
+  });
+  span.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+  modal.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
 }
-    
-
-
 
 // function createWildersModal(id){
 //     const modal = document.querySelector("#modalUserProfile");
@@ -199,18 +202,13 @@ for(let i=0; i<btns.length; i++){
 //     modal.appendChild(idUser)
 // }
 
-
-function creatModalContent(id){
-    console.log(wildersInfos[id].name)
-
+function creatModalContent(id) {
+  console.log(wildersInfos[id].name);
 }
 
-const allBtn = document.querySelectorAll("button")
-for(let i=0; i<allBtn.length; i++){
-    allBtn[i].addEventListener('click', function(){
-        
-        creatModalContent(i)
-    })
+const allBtn = document.querySelectorAll("button");
+for (let i = 0; i < allBtn.length; i++) {
+  allBtn[i].addEventListener("click", function () {
+    creatModalContent(i);
+  });
 }
-
-
