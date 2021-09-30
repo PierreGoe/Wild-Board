@@ -24,6 +24,7 @@ footer{
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 10px;
+  margin-top: 5vh;
 }
 
 .card {
@@ -36,7 +37,13 @@ footer{
   align-content: space-between;
   margin: auto;
   margin-top: 3em;
+  bottom: 0;
 }
+
+.card:hover{
+  bottom: 10px;
+}
+
 
 .front {
   position: absolute;
