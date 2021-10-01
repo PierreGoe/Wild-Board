@@ -23,8 +23,8 @@ const wildersInfos = [{
   },
 },
 {
-  name: "Copy-Denhez",
-  lastname: "Caroline",
+  name: "Caroline",
+  lastname: "Copy-Denhez",
   age: function () {
     let diff = Date.now() - this.calcAge.getTime();
     let age = new Date(diff);
@@ -496,7 +496,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "",
+  picureProfile: "./source/image/users/hacene.jpg",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -520,7 +520,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "",
+  picureProfile: "./source/image/users/loic.jpg",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
