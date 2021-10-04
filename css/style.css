@@ -120,17 +120,15 @@ h1 {
 
 .card-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
     align-content: space-between;
-    flex-wrap: nowrap;
+    flex-flow: column nowrap;
 }
 
 @media screen and (min-width: 400px) {
     /* Desktop mode */
     .card-container {
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
     }
 }
 
@@ -155,6 +153,7 @@ button {
     height: 30px;
     width: 60px;
     z-index: 10;
+    cursor: not-allowed;
 }
 
 .btnProfile {
@@ -168,6 +167,11 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btnProfile:hover {
+    background-color: rgb(219, 87, 87);
+    cursor: pointer;
 }
 
 .modal {
@@ -225,6 +229,6 @@ button {
     background-size: cover;
 }
 
-footer{
+footer {
     margin-top: 20px;
 }
