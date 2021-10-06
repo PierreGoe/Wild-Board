@@ -350,6 +350,7 @@ header {
 .img-student {
   width: 100%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  
 }
 
 .div1 {
@@ -462,5 +463,64 @@ header {
   100% {
     opacity: 1;
     transform: translate(0);
+  }
+} opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* Media queries */
+
+@media screen and (min-width: 400px) {
+  /* Desktop mode */
+  .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+ opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* Media queries */
+
+@media screen and (min-width: 400px) {
+  /* Desktop mode */
+  .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
