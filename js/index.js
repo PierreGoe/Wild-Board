@@ -45,7 +45,7 @@ const wildersInfos = [
   new Wilders("Victor", "Morel", "31/07/1993", 1993, 07, 31, "Oui, deux chats", "Aya et Taz", "Tout sauf la viande", "Aucun", "Djing, informatique, cuisine, dessin, bricolage", "Djing, informatique, cuisine, dessin, bricolage", "J'ai intégré la Wild pour leur approche pédagogique et souhaite devenir développeur car c'est une passion depuis tout petit", "./source/image/users/victore", "https://images-na.ssl-images-amazon.com/images/I/71HxmP2uhUL.jpg", "https://github.com/Morel-Victor", "https://images-na.ssl-images-amazon.com/images/I/71HxmP2uhUL.jpg"),
   new Wilders("Bertrand", "Briset", "12/05/1981", 1981, 05, 12, "Non", "Aucun", "Lapin + Kluski", "'Wild things' Jimi Hendrix", "Musique, SF", "Droit social, logistique", "J'ai intégré la Wild car les chaussettes c'est super! Et je souhaite être développeur pour la diversité du métier, et que c'est un domaine où il faut être curieux", "./source/image/users/bertrand", "https://www.linkedin.com/in/bertrand-briset-809608b4/", "https://github.com/BBriset", "https://www.linkedin.com/in/bertrand-briset-809608b4/"),
   new Wilders("Jonathan", "Guillot", "14/04/1987", 1987, 04, 14, "Non", "Aucun", "Lasagnes", "Coder en chaussettes!", "Jeux vidéo, anime, sport", "Bricolage, décoration", "Je suis entré à la Wild pour la proximité avec les camarades et le formateur, et je souhaite être développeur pour changer de vie et avoir un nouveau boulot dans un domaine qui me passionne", "./source/image/users/jonathan", "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/T%27choupi_%28cropped%29.jpg/1200px-T%27choupi_%28cropped%29.jpg", "https://github.com/John-athan14", "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/T%27choupi_%28cropped%29.jpg/1200px-T%27choupi_%28cropped%29.jpg"),
-  new Wilders(),
+  new Wilders("Pierre", "Goemans", "30/05/1994", 1994, 05, 30, "Oui", "deux chat", "Lasagnes", "", "Jeux vidéo, impression 3D, sport", "informatique, Serie, Film", "Mon projet avec la Wild c'est de devenir professionnel et plus amateur", "./source/image/users/pierre", "https://www.linkedin.com/in/pierre-goemans-b61307105/", "https://github.com/PierreGoe", "https://github.com/PierreGoe"),
   new Wilders("Hacene","Hamroune", "12/03/1995", 1995, 03, 12, "Oui, un chaton", "Winnie", "Couscous", "Il dit qu'il en a pas...on demandera à Loic ", "Boxe, football, basketball, running, fifa", "La restauration (snacking bien sûr), sécurité, dev web", "J'ai intégré la Wild pour me permettre d'acquérir les compétences nécéssaires du métier de developpeur web et c'est un métier qui couvre beaucoup de domaine et qui permet de travailler à son compte, donc etre libre", "./source/image/users/hacene", "https://www.linkedin.com/in/hacenehamroune/", "https://github.com/Hacene010", "https://www.linkedin.com/in/hacenehamroune/"),
   new Wilders("Loïc", "Brassart", "02/05/1986", 1986, 05, 02, "Oui, deux chats", "Ithaque et Pixel", "Pâtes carbonara", "Un jour, on étant en vacances à la campagne et on a fêté l'anniversaire d'une copine dans une pâture avec un troupeau de vaches. Quand on a allumé le gateau, le taureau qui était avec les vaches s'est montré un poil nerveux (comprendre: il nous a chargé) et on a tous tapé un sprint pour sortir avant de mourir piétinés. Ma grande fierté? J'ai sauté la barrière qui délimitait le champ sans même la toucher tel un petit cabri terrifié. Mon grand regret? On a jamais récupéré le gâteau é_è", "Piano, code, jeux vidéo (RPG), jeux de rôle, chant, travail du cuir, bricolage, ...", "Cf mes hobbys? ...Nan, pas forcément, y'a des hobbys dans lesquels je suis nul à chier!", "J'ai intégré la Wild pour entrainer des légions de Petits Scarabées JS lobotomisés et obéissant à mes ordres, afin de conduire un putsch sur Euratech d'ici deux ou trois sessions. Et ... j'ai pas fait exprès d'être dev. Si on vous demande, merci de dire que c'est parce que je suis tombé dans la marmite quand j'étais petit", "./source/image/users/loic", "https://www.linkedin.com/in/loic-brassart-a106a555/", "https://github.com/LoicBrassart", "https://www.linkedin.com/in/loic-brassart-a106a555/")
 ]
@@ -184,43 +184,43 @@ function creatModalContent(id) {
     const UserInfoInModal = document.querySelector(".modalUserInfos")
     // Name Users
     const titleModal = document.createElement("h2");
-    titleModal.innerHTML = `<span class = titleAnswer>Nom : </span>${wildersInfos[id].name}`;
+    titleModal.innerHTML = `<span class = titleAnswer>Nom </span>${wildersInfos[id].name}`;
     UserInfoInModal.appendChild(titleModal);
     // Age User
     const ageUser = document.createElement("p");
-    ageUser.innerHTML = `<span class = titleAnswer>Age : </span>${wildersInfos[id].age()}`;
+    ageUser.innerHTML = `<span class = titleAnswer>Age </span>${wildersInfos[id].age()}`;
     UserInfoInModal.appendChild(ageUser);
     // birthday User
     const birthdayUser = document.createElement("p");
-    birthdayUser.innerHTML = `<span class = titleAnswer>Date de naissance: </span>${wildersInfos[id].birthday}`;
+    birthdayUser.innerHTML = `<span class = titleAnswer>Date de naissance</span>${wildersInfos[id].birthday}`;
     UserInfoInModal.appendChild(birthdayUser);
     // pets User
     const petsUser = document.createElement("p");
-    petsUser.innerHTML = `<span class = titleAnswer>Animal : </span>${wildersInfos[id].pets}`;
+    petsUser.innerHTML = `<span class = titleAnswer>Animal </span>${wildersInfos[id].pets}`;
     UserInfoInModal.appendChild(petsUser);
     // name of pets User
     const namePetsUser = document.createElement("p");
-    namePetsUser.innerHTML = `<span class = titleAnswer>Nom de son animal : </span>${wildersInfos[id].nameOfPets}`;
+    namePetsUser.innerHTML = `<span class = titleAnswer>Nom de son animal </span>${wildersInfos[id].nameOfPets}`;
     UserInfoInModal.appendChild(namePetsUser);
     // favorite foods User
     const favoriteUserFood = document.createElement("p");
-    favoriteUserFood.innerHTML = `<span class = titleAnswer>Son plat préféré : </span>${wildersInfos[id].favoritFood}`;
+    favoriteUserFood.innerHTML = `<span class = titleAnswer>Son plat préféré </span>${wildersInfos[id].favoritFood}`;
     UserInfoInModal.appendChild(favoriteUserFood);
     // wild side User
     const wildSideUser = document.createElement("p");
-    wildSideUser.innerHTML = `<span class = titleAnswer>Son cote Wild : </span>${wildersInfos[id].wildSide}`;
+    wildSideUser.innerHTML = `<span class = titleAnswer>Son cote Wild </span>${wildersInfos[id].wildSide}`;
     UserInfoInModal.appendChild(wildSideUser);
     // hobby User
     const hobbyUser = document.createElement("p");
-    hobbyUser.innerHTML = `<span class = titleAnswer>Hobby : </span>${wildersInfos[id].hobby}`;
+    hobbyUser.innerHTML = `<span class = titleAnswer>Hobby </span>${wildersInfos[id].hobby}`;
     UserInfoInModal.appendChild(hobbyUser);
     // skills User
     const skillsUser = document.createElement("p");
-    skillsUser.innerHTML = `<span class = titleAnswer>Compétance : </span>${wildersInfos[id].skills}`;
+    skillsUser.innerHTML = `<span class = titleAnswer>Compétance </span>${wildersInfos[id].skills}`;
     UserInfoInModal.appendChild(skillsUser);
     // motivation User
     const motivationUser = document.createElement("p");
-    motivationUser.innerHTML = `<span class = titleAnswer>Motivation : </span>${wildersInfos[id].motivation}`;
+    motivationUser.innerHTML = `<span class = titleAnswer>Motivation </span>${wildersInfos[id].motivation}`;
     UserInfoInModal.appendChild(motivationUser);
     // creat Div for Icones
     const divIcones = document.createElement("div");
