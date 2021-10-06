@@ -1,3 +1,4 @@
+//Create wilders
 const wildersInfos = [
   {
     name: "Benoît",
