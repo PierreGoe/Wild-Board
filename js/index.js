@@ -667,61 +667,65 @@ function creatModalContent(id) {
     UserInfoInModal.appendChild(titleModal);
     // Age User
     const ageUser = document.createElement("p");
-    ageUser.textContent = `Age : ${wildersInfos[id].age()}`;
+    ageUser.innerHTML = `<span class = titleAnswer>Age : </span>${wildersInfos[id].age()}`;
     UserInfoInModal.appendChild(ageUser);
     // birthday User
     const birthdayUser = document.createElement("p");
-    birthdayUser.textContent = `Date de naissance: ${wildersInfos[id].birthday}`;
+    birthdayUser.innerHTML = `<span class = titleAnswer>Date de naissance: </span>${wildersInfos[id].birthday}`;
     UserInfoInModal.appendChild(birthdayUser);
     // pets User
     const petsUser = document.createElement("p");
-    petsUser.textContent = `Animal : ${wildersInfos[id].pets}`;
+    petsUser.innerHTML = `<span class = titleAnswer>Animal : </span>${wildersInfos[id].pets}`;
     UserInfoInModal.appendChild(petsUser);
     // name of pets User
     const namePetsUser = document.createElement("p");
-    namePetsUser.textContent = `Nom de son animal : ${wildersInfos[id].nameOfPets}`;
+    namePetsUser.innerHTML = `<span class = titleAnswer>Nom de son animal : </span>${wildersInfos[id].nameOfPets}`;
     UserInfoInModal.appendChild(namePetsUser);
     // favorite foods User
     const favoriteUserFood = document.createElement("p");
-    favoriteUserFood.textContent = `Son plat préféré : ${wildersInfos[id].favoritFood}`;
+    favoriteUserFood.innerHTML = `<span class = titleAnswer>Son plat préféré : </span>${wildersInfos[id].favoritFood}`;
     UserInfoInModal.appendChild(favoriteUserFood);
     // wild side User
     const wildSideUser = document.createElement("p");
-    wildSideUser.textContent = `Son : ${wildersInfos[id].wildSide}`;
+    wildSideUser.innerHTML = `<span class = titleAnswer>Son cote Wild : </span>${wildersInfos[id].wildSide}`;
     UserInfoInModal.appendChild(wildSideUser);
     // hobby User
     const hobbyUser = document.createElement("p");
-    hobbyUser.textContent = `Age : ${wildersInfos[id].hobby}`;
+    hobbyUser.innerHTML = `<span class = titleAnswer>Hobby : </span>${wildersInfos[id].hobby}`;
     UserInfoInModal.appendChild(hobbyUser);
     // skills User
     const skillsUser = document.createElement("p");
-    skillsUser.textContent = `Age : ${wildersInfos[id].skills}`;
+    skillsUser.innerHTML = `<span class = titleAnswer>Compétance : </span>${wildersInfos[id].skills}`;
     UserInfoInModal.appendChild(skillsUser);
     // motivation User
     const motivationUser = document.createElement("p");
-    motivationUser.textContent = `Age : ${wildersInfos[id].motivation}`;
+    motivationUser.innerHTML = `<span class = titleAnswer>Motivation : </span>${wildersInfos[id].motivation}`;
     UserInfoInModal.appendChild(motivationUser);
     // creat Div for Icones
     const divIcones = document.createElement("div");
+    divIcones.setAttribute("class","containerIcone")
     
     // linkedin User
     const linkedinUser = document.createElement("a");
     linkedinUser.setAttribute("href", wildersInfos[id].social.linkedin);
     linkedinUser.setAttribute("target", "_blank");
     linkedinUser.innerHTML = "<img src='https://img.icons8.com/material-outlined/40/000000/linkedin--v1.png'>";
-    modalContent.appendChild(linkedinUser);
+    divIcones.appendChild(linkedinUser);
     // git hub User
     const githubUser = document.createElement("a");
     githubUser.setAttribute("href", wildersInfos[id].social.gitHub);
     githubUser.setAttribute("target", "_blank");
     githubUser.innerHTML = "<img src='https://img.icons8.com/material-outlined/40/000000/github.png'>";
-    modalContent.appendChild(githubUser);
+    divIcones.appendChild(githubUser);
     // Cv User
     const curriculumUser = document.createElement("a");
     curriculumUser.setAttribute("href", wildersInfos[id].social.cvUser);
     curriculumUser.setAttribute("target", "_blank");
     curriculumUser.innerHTML = "<img src='https://img.icons8.com/material-rounded/40/000000/parse-from-clipboard.png'>";
-    modalContent.appendChild(curriculumUser);
+    divIcones.appendChild(curriculumUser);
+    UserInfoInModal.appendChild(divIcones)
+    
+
 
 }
 
