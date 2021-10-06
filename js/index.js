@@ -277,7 +277,7 @@ const header = document.querySelector('header');
 const btnFlame = document.createElement('button'); 
 btnFlame.setAttribute("class","flamebtn");
 btnFlame.setAttribute("id","flamebtnid");
-btnFlame.textContent= "don't click";
+btnFlame.textContent= "";
 header.appendChild(btnFlame);
 
 

@@ -5,8 +5,12 @@
     --raleway: 'Raleway', sans-serif;
 }
 
+body{
+  scroll-behavior: smooth;
+}
+
 .about-title {
-    background: linear-gradient(30deg, #ddbdbd 0%, #f76c6c 100%);
+    background: var(--colorWildCodeSchool);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -153,11 +157,21 @@ h1 {
 
 
 button {
-    background-color: #f76c6c;
-    height: 30px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    
     width: 60px;
     z-index: 10;
     cursor: not-allowed;
+
+    /* reset buton */
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    
 }
 
 .btnProfile {
@@ -171,11 +185,13 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 30px;
 }
 
 .btnProfile:hover {
     background-color: rgb(219, 87, 87);
     cursor: pointer;
+
 }
 
 .modal {
