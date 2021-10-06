@@ -15,7 +15,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "./source/image/users/benoit.jpg",
+  picureProfile: "./source/image/users/benoit",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -39,7 +39,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "./source/image/users/caroline.jpg",
+  picureProfile: "./source/image/users/caroline",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -63,7 +63,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "./source/image/users/cedric.jpg",
+  picureProfile: "./source/image/users/cedric",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -87,7 +87,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "./source/image/users/guillaume.jpg",
+  picureProfile: "./source/image/users/guillaume",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -111,7 +111,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "./source/image/users/heloise.jpg",
+  picureProfile: "./source/image/users/heloise",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -135,7 +135,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "./source/image/users/jonathan.jpg",
+  picureProfile: "./source/image/users/jonathan",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -159,7 +159,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "./source/image/users/marion.jpg",
+  picureProfile: "./source/image/users/marion",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -183,7 +183,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "./source/image/users/othmane.jpg",
+  picureProfile: "./source/image/users/othmane",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -207,7 +207,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "./source/image/users/quentin.jpg",
+  picureProfile: "./source/image/users/quentin",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -231,7 +231,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "./source/image/users/sonia.jpg",
+  picureProfile: "./source/image/users/sonia",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -255,7 +255,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "./source/image/users/bertrand.jpg",
+  picureProfile: "./source/image/users/bertrand",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -279,7 +279,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "./source/image/users/claire.jpg",
+  picureProfile: "./source/image/users/claire",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -303,7 +303,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "./source/image/users/franck.jpg",
+  picureProfile: "./source/image/users/franck",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -327,7 +327,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "./source/image/users/guillaumeK.jpg",
+  picureProfile: "./source/image/users/guillaumeK",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -351,7 +351,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "./source/image/users/jeremy.jpg",
+  picureProfile: "./source/image/users/jeremy",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -376,7 +376,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "./source/image/users/luigi.jpg",
+  picureProfile: "./source/image/users/luigi",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -400,7 +400,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "./source/image/users/nacyme.jpg",
+  picureProfile: "./source/image/users/nacyme",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -424,7 +424,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "./source/image/users/pierre.jpg",
+  picureProfile: "./source/image/users/pierre",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -448,7 +448,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "./source/image/users/romain.jpg",
+  picureProfile: "./source/image/users/romain",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -472,7 +472,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "./source/image/users/victore.jpg",
+  picureProfile: "./source/image/users/victore",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -496,7 +496,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "./source/image/users/hacene.jpg",
+  picureProfile: "./source/image/users/hacene",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -520,7 +520,7 @@ const wildersInfos = [{
   hobby: "peinture",
   skills: "Le mime",
   motivation: "Aucune",
-  picureProfile: "./source/image/users/loic.jpg",
+  picureProfile: "./source/image/users/loic",
   social: {
       linkedin: "lien Linkedin",
       gitHub: "lien gitHub",
@@ -541,7 +541,7 @@ function createWildersCard(name, id) {
   // content to add
 
   const cardImage = document.createElement("img");
-  cardImage.setAttribute("src", wildersInfos[id].picureProfile);
+  cardImage.setAttribute("src", wildersInfos[id].picureProfile + "-min.jpg");
   cardImage.setAttribute("class", "pictureProfil");
   cardFront.appendChild(cardImage);
 
@@ -654,7 +654,7 @@ function creatModalContent(id) {
 
     const profileImage = document.createElement("div");
     profileImage.setAttribute("class", "imageModal");
-    profileImage.style.backgroundImage = `url('${wildersInfos[id].picureProfile}')`;
+    profileImage.style.backgroundImage = `url('${wildersInfos[id].picureProfile}.jpg')`;
     modalContent.appendChild(profileImage);
     // create content for users info
     const modalUserInfos = document.createElement('div')
@@ -752,12 +752,12 @@ document.querySelector(".copyrightYear").innerHTML = currentYear;
 
 
 // Flame mode 
-const header = document.querySelector('header')
-const btnFlame = document.createElement('button') 
-btnFlame.setAttribute("class","flamebtn")
-btnFlame.setAttribute("id","flamebtnid")
-btnFlame.textContent= "don't click"
-header.appendChild(btnFlame)
+  const header = document.querySelector('header')
+  const btnFlame = document.createElement('button') 
+  btnFlame.setAttribute("class","flamebtn")
+  btnFlame.setAttribute("id","flamebtnid")
+  btnFlame.textContent= "don't click"
+  header.appendChild(btnFlame)
 
 
 
