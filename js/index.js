@@ -663,43 +663,43 @@ function creatModalContent(id) {
     const UserInfoInModal = document.querySelector(".modalUserInfos")
     // Name Users
     const titleModal = document.createElement("h2");
-    titleModal.textContent = wildersInfos[id].name;
+    titleModal.innerHTML = `<span class = titleAnswer>Nom : </span>${wildersInfos[id].name}`;
     UserInfoInModal.appendChild(titleModal);
     // Age User
     const ageUser = document.createElement("p");
-    ageUser.textContent = wildersInfos[id].age();
+    ageUser.textContent = `Age : ${wildersInfos[id].age()}`;
     UserInfoInModal.appendChild(ageUser);
     // birthday User
     const birthdayUser = document.createElement("p");
-    birthdayUser.textContent = wildersInfos[id].birthday;
+    birthdayUser.textContent = `Date de naissance: ${wildersInfos[id].birthday}`;
     UserInfoInModal.appendChild(birthdayUser);
     // pets User
     const petsUser = document.createElement("p");
-    petsUser.textContent = wildersInfos[id].pets;
+    petsUser.textContent = `Animal : ${wildersInfos[id].pets}`;
     UserInfoInModal.appendChild(petsUser);
     // name of pets User
     const namePetsUser = document.createElement("p");
-    namePetsUser.textContent = wildersInfos[id].nameOfPets;
+    namePetsUser.textContent = `Nom de son animal : ${wildersInfos[id].nameOfPets}`;
     UserInfoInModal.appendChild(namePetsUser);
     // favorite foods User
     const favoriteUserFood = document.createElement("p");
-    favoriteUserFood.textContent = wildersInfos[id].favoritFood;
+    favoriteUserFood.textContent = `Son plat préféré : ${wildersInfos[id].favoritFood}`;
     UserInfoInModal.appendChild(favoriteUserFood);
     // wild side User
     const wildSideUser = document.createElement("p");
-    wildSideUser.textContent = wildersInfos[id].wildSide;
+    wildSideUser.textContent = `Son : ${wildersInfos[id].wildSide}`;
     UserInfoInModal.appendChild(wildSideUser);
     // hobby User
     const hobbyUser = document.createElement("p");
-    hobbyUser.textContent = wildersInfos[id].hobby;
+    hobbyUser.textContent = `Age : ${wildersInfos[id].hobby}`;
     UserInfoInModal.appendChild(hobbyUser);
     // skills User
     const skillsUser = document.createElement("p");
-    skillsUser.textContent = wildersInfos[id].skills;
+    skillsUser.textContent = `Age : ${wildersInfos[id].skills}`;
     UserInfoInModal.appendChild(skillsUser);
     // motivation User
     const motivationUser = document.createElement("p");
-    motivationUser.textContent = wildersInfos[id].motivation;
+    motivationUser.textContent = `Age : ${wildersInfos[id].motivation}`;
     UserInfoInModal.appendChild(motivationUser);
     // creat Div for Icones
     const divIcones = document.createElement("div");
