@@ -19,10 +19,7 @@ h1 {
 }
 
 .about-title {
-  background: linear-gradient(30deg, #ddbdbd 0%, #f76c6c 100%);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--colorWildCodeSchool);
   font-weight: 700;
   font-size: 30px;
   text-align: center;
@@ -360,13 +357,14 @@ button {
 }
 .actions-bar > * {
   margin-left: 0.5rem;
-  color: var(--colorWildCodeSchool)
+  color: var(--colorWildCodeSchool);
 }
 
 .actions-bar > *:first-child {
   margin-left: 0;
 }
-#searchSelect,#searchInput {
+#searchSelect,
+#searchInput {
   color: var(--colorWildCodeSchool);
   font-size: 20px;
 }
