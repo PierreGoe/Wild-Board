@@ -530,78 +530,78 @@ const wildersInfos = [{
 ];
 
 function createWildersCard(name, id) {
-const cardContainer = document.querySelector(".card-container");
+  const cardContainer = document.querySelector(".card-container");
 
-const cardBody = document.createElement("article");
-cardBody.setAttribute("class", "card");
-cardContainer.appendChild(cardBody);
+  const cardBody = document.createElement("article");
+  cardBody.setAttribute("class", "card");
+  cardContainer.appendChild(cardBody);
 
-const cardFront = document.createElement("div");
-cardFront.setAttribute("class", "front");
-// content to add
+  const cardFront = document.createElement("div");
+  cardFront.setAttribute("class", "front");
+  // content to add
 
-const cardImage = document.createElement("img");
-cardImage.setAttribute("src", wildersInfos[id].picureProfile);
-cardImage.setAttribute("class", "pictureProfil");
-cardFront.appendChild(cardImage);
+  const cardImage = document.createElement("img");
+  cardImage.setAttribute("src", wildersInfos[id].picureProfile);
+  cardImage.setAttribute("class", "pictureProfil");
+  cardFront.appendChild(cardImage);
 
-cardBody.appendChild(cardFront);
-const fontTitle = document.createElement("h2");
-fontTitle.textContent = name;
-cardFront.appendChild(fontTitle);
+  cardBody.appendChild(cardFront);
+  const fontTitle = document.createElement("h2");
+  fontTitle.textContent = name;
+  cardFront.appendChild(fontTitle);
 
-const cardBack = document.createElement("div");
-cardBack.setAttribute("class", "back");
-const cardBackContainer = document.createElement("div");
-cardBackContainer.setAttribute("class", "back-container");
-cardBack.appendChild(cardBackContainer);
+  const cardBack = document.createElement("div");
+  cardBack.setAttribute("class", "back");
+  const cardBackContainer = document.createElement("div");
+  cardBackContainer.setAttribute("class", "back-container");
+  cardBack.appendChild(cardBackContainer);
 
-// content to add
-cardBody.appendChild(cardBack);
-
-
-//   button plus info back card
-const btnBackCard = document.createElement("button");
-btnBackCard.setAttribute("id", `btnProfile${id}`);
-btnBackCard.setAttribute("class", "btnProfile");
-btnBackCard.textContent = "Plus d'infos";
-cardBackContainer.appendChild(btnBackCard);
-
-const icones = document.createElement("div");
-icones.setAttribute("class", "icones-container");
-cardBackContainer.appendChild(icones);
+  // content to add
+  cardBody.appendChild(cardBack);
 
 
-const githubLink = document.createElement("a");
-githubLink.setAttribute("href", "http://google.com");
-icones.appendChild(githubLink);
+  //   button plus info back card
+  const btnBackCard = document.createElement("button");
+  btnBackCard.setAttribute("id", `btnProfile${id}`);
+  btnBackCard.setAttribute("class", "btnProfile");
+  btnBackCard.textContent = "Plus d'infos";
+  cardBackContainer.appendChild(btnBackCard);
 
-const gitHubLogo = document.createElement("img");
-gitHubLogo.setAttribute(
-  "src",
-  "https://img.icons8.com/material-outlined/30/000000/github.png"
-);
-githubLink.appendChild(gitHubLogo);
+  const icones = document.createElement("div");
+  icones.setAttribute("class", "icones-container");
+  cardBackContainer.appendChild(icones);
 
-const linkedinLink = document.createElement("a");
-linkedinLink.setAttribute("href", "http://google.com");
-icones.appendChild(linkedinLink);
-const linkedinLogo = document.createElement("img");
-linkedinLogo.setAttribute(
-  "src",
-  "https://img.icons8.com/material-outlined/30/000000/linkedin--v1.png"
-);
-linkedinLink.appendChild(linkedinLogo);
 
-const cvLink = document.createElement("a");
-cvLink.setAttribute("href", "http://google.com");
-icones.appendChild(cvLink);
-const cvLogo = document.createElement("img");
-cvLogo.setAttribute(
-  "src",
-  "https://img.icons8.com/material-rounded/30/000000/parse-from-clipboard.png"
-);
-cvLink.appendChild(cvLogo);
+  const githubLink = document.createElement("a");
+  githubLink.setAttribute("href", "http://google.com");
+  icones.appendChild(githubLink);
+
+  const gitHubLogo = document.createElement("img");
+  gitHubLogo.setAttribute(
+    "src",
+    "https://img.icons8.com/material-outlined/30/000000/github.png"
+  );
+  githubLink.appendChild(gitHubLogo);
+
+  const linkedinLink = document.createElement("a");
+  linkedinLink.setAttribute("href", "http://google.com");
+  icones.appendChild(linkedinLink);
+  const linkedinLogo = document.createElement("img");
+  linkedinLogo.setAttribute(
+    "src",
+    "https://img.icons8.com/material-outlined/30/000000/linkedin--v1.png"
+  );
+
+  linkedinLink.appendChild(linkedinLogo);
+  const cvLink = document.createElement("a");
+  cvLink.setAttribute("href", "http://google.com");
+  icones.appendChild(cvLink);
+  const cvLogo = document.createElement("img");
+  cvLogo.setAttribute(
+    "src",
+    "https://img.icons8.com/material-rounded/30/000000/parse-from-clipboard.png"
+  );
+  cvLink.appendChild(cvLogo);
 }
 
 for (let i = 0; i < wildersInfos.length; i++) {
@@ -623,22 +623,27 @@ function flipCard() {
 
 
 // Modal
+const body = document.querySelector("body");
 const modal = document.querySelector("#modalUserProfile");
 const modalContent = document.querySelector(".modalContent")
 const btns = document.querySelectorAll(".btnProfile");
 const span = document.querySelector(".close");
+
 for (let i = 0; i < btns.length; i++) {
 
     btns[i].addEventListener("click", function() {
         modal.style.display = "block";
+        body.style.overflow = "hidden";
     });
     span.addEventListener("click", function() {
         modal.style.display = "none";
         deleteModalContent()
+        body.style.overflow = "auto";
     });
     modal.addEventListener("click", function() {
         modal.style.display = "none";
         deleteModalContent()
+        body.style.overflow = "auto";
     });
 }
 
@@ -646,50 +651,59 @@ for (let i = 0; i < btns.length; i++) {
 function creatModalContent(id) {
 
     // Picture Profile 
+
     const profileImage = document.createElement("div");
     profileImage.setAttribute("class", "imageModal");
     profileImage.style.backgroundImage = `url('${wildersInfos[id].picureProfile}')`;
     modalContent.appendChild(profileImage);
-    // Name User
+    // create content for users info
+    const modalUserInfos = document.createElement('div')
+    modalUserInfos.setAttribute("class", "modalUserInfos")
+    modalContent.appendChild(modalUserInfos);
+    const UserInfoInModal = document.querySelector(".modalUserInfos")
+    // Name Users
     const titleModal = document.createElement("h2");
     titleModal.textContent = wildersInfos[id].name;
-    modalContent.appendChild(titleModal);
+    UserInfoInModal.appendChild(titleModal);
     // Age User
     const ageUser = document.createElement("p");
     ageUser.textContent = wildersInfos[id].age();
-    modalContent.appendChild(ageUser);
+    UserInfoInModal.appendChild(ageUser);
     // birthday User
     const birthdayUser = document.createElement("p");
     birthdayUser.textContent = wildersInfos[id].birthday;
-    modalContent.appendChild(birthdayUser);
+    UserInfoInModal.appendChild(birthdayUser);
     // pets User
     const petsUser = document.createElement("p");
     petsUser.textContent = wildersInfos[id].pets;
-    modalContent.appendChild(petsUser);
+    UserInfoInModal.appendChild(petsUser);
     // name of pets User
     const namePetsUser = document.createElement("p");
     namePetsUser.textContent = wildersInfos[id].nameOfPets;
-    modalContent.appendChild(namePetsUser);
+    UserInfoInModal.appendChild(namePetsUser);
     // favorite foods User
     const favoriteUserFood = document.createElement("p");
     favoriteUserFood.textContent = wildersInfos[id].favoritFood;
-    modalContent.appendChild(favoriteUserFood);
+    UserInfoInModal.appendChild(favoriteUserFood);
     // wild side User
     const wildSideUser = document.createElement("p");
     wildSideUser.textContent = wildersInfos[id].wildSide;
-    modalContent.appendChild(wildSideUser);
+    UserInfoInModal.appendChild(wildSideUser);
     // hobby User
     const hobbyUser = document.createElement("p");
     hobbyUser.textContent = wildersInfos[id].hobby;
-    modalContent.appendChild(hobbyUser);
+    UserInfoInModal.appendChild(hobbyUser);
     // skills User
     const skillsUser = document.createElement("p");
     skillsUser.textContent = wildersInfos[id].skills;
-    modalContent.appendChild(skillsUser);
+    UserInfoInModal.appendChild(skillsUser);
     // motivation User
     const motivationUser = document.createElement("p");
     motivationUser.textContent = wildersInfos[id].motivation;
-    modalContent.appendChild(motivationUser);
+    UserInfoInModal.appendChild(motivationUser);
+    // creat Div for Icones
+    const divIcones = document.createElement("div");
+    
     // linkedin User
     const linkedinUser = document.createElement("a");
     linkedinUser.setAttribute("href", wildersInfos[id].social.linkedin);
