@@ -145,8 +145,7 @@ h1 {
     height: 80%;
     object-fit: cover;
     border-radius: var(--radiusCard) var(--radiusCard) 0 0;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));  
 }
 
 .front,
@@ -227,9 +226,6 @@ button {
     
 }
 
-
-
-
 /* The Close Button */
 
 .close {
@@ -249,14 +245,11 @@ button {
 .imageModal {
     height: 200px;
     width: 200px;
-    margin: 0 20% ;
+    margin: 0 auto ;
     background-size: cover;
     border-radius: 30%;
     border-color: var(--colorWildCodeSchool);
-    margin-top: 6vh;
-
-
-
+    background-position: center;
     border: 8px solid #F77B7B;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     stroke-linecap: round;
@@ -270,14 +263,10 @@ footer {
     text-align: center;   
     align-items: center;
     background-image: url("../source/image/wcsTransparent.png");
-
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-   
-    
-
-
+    height: 100%;
 }
 
 .modalContent p{
@@ -285,17 +274,13 @@ footer {
 }
 .modalContent a{
     text-align: center;
-    
-    
-  justify-content: center;
+    justify-content: center;
 }
 
 .modalUserInfos{
-    width: 200px;
+    width: 50vw;
     margin: auto;
     padding-bottom: 2vh;
-
-
 }
 
 .titleAnswer{
@@ -304,8 +289,8 @@ footer {
     text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
     font-size: 3vh; 
     padding-bottom: 1vh;
-
 }
+
 .modalContent h2 , .modalContent p{
     font-size: 2vh;
     display: flex;
@@ -347,8 +332,6 @@ header {
 .img-student {
   width: 100%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
- 
-  
 }
 
 .div1 {
@@ -518,8 +501,8 @@ header {
       margin-bottom: 2vh !important;
   }
   .imageModal {
-      height: 600px !important;;
-      width: 400px !important;;
+      height: 80vh !important;;
+      width: 40vw !important;;
   }
 
 
