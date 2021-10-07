@@ -295,8 +295,6 @@ btnFlame.addEventListener('click', function(){
 
 // fontion pour faire disparaitre le button
 
-
-
 window.addEventListener("scroll", ()=>{
   console.log(window.scrollY)
   console.log(window.innerWidth)
@@ -308,29 +306,5 @@ window.addEventListener("scroll", ()=>{
   }
 })
 
-
-
-
-
-// var scrolled = false;
-
-// window.onscroll = function() {
-//   scrolled = true;
-//   console.log(scrollY)
-//   if (window.scrollY <= 610){
-//     document.querySelector(".scrollup").style.display = "none"
-//   }
-//   else{
-//     document.querySelector(".scrollup").style.display = "block"
-//   }
-
-// }
-
-// setInterval(function(){
-//   if (scrolled) {
-//     scrolled = false;
-//     // scrollFunction()
-//   }
-// }, 400);
 
 
