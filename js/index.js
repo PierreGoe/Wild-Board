@@ -290,3 +290,25 @@ btnFlame.addEventListener('click', function() {
     }
 
 })
+
+function searchBar() {
+  let userInput, nameFilter, wildCards, wilderName, innerValue;
+  userInput = document.querySelector("#searchInput");
+  nameFilter = userInput.value.toUpperCase();
+  cardContainer = document.querySelector(".card-container");
+  wildCards = cardContainer.querySelectorAll(".card");
+  for(let i = 0; i < wildCards.length; i++){
+    wilderName = wildCards[i].querySelector("h2");
+    innerValue = wilderName.innerText || wilderName.textContent;
+    if(innerValue.toUpperCase().indexOf(nameFilter) > -1){
+      wildCards[i].style.display="";
+    }else{
+      wildCards[i].style.display="none";
+    }
+  }
+}
+
+let searchInput = document.querySelector("#searchInput");
+searchInput.addEventListener("keyup", searchBar);
+console.log(searchBar());
+
