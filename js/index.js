@@ -183,7 +183,7 @@ function creatModalContent(id) {
     modalContent.appendChild(modalUserInfos);
     const UserInfoInModal = document.querySelector(".modalUserInfos")
     // Name Users
-    const titleModal = document.createElement("h2");
+    const titleModal = document.createElement("p");
     titleModal.innerHTML = `<span class = titleAnswer>Nom </span>${wildersInfos[id].name}`;
     UserInfoInModal.appendChild(titleModal);
     // Age User

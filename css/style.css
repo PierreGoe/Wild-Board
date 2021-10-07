@@ -9,6 +9,19 @@ html{
   scroll-behavior: smooth;
 }
 
+p, h2 {
+    padding: 0 10px;
+}
+
+p{
+    font-family: var(--varela);
+    text-align: center;
+}
+
+h1, h2{
+    font-family: var(--raleway);
+}
+
 .about-title {
     background: var(--colorWildCodeSchool);
     background-clip: border-box;
@@ -42,7 +55,6 @@ footer {
     align-content: space-between;
     margin: auto;
     margin-top: 3em;
-    font-family: var(--varela);
     font-weight: bolder;
     bottom: 0;
 }
@@ -121,7 +133,6 @@ header {
 
 h1 {
     color: #ffffff;
-    font-family: Raleway;
     font-style: normal;
     font-size: 36px;
     line-height: 42px;
@@ -256,6 +267,7 @@ button {
     border: 8px solid #F77B7B;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     stroke-linecap: round;
+    margin-top: 4vh;
 }
 
 footer {
@@ -512,8 +524,9 @@ header {
       margin-bottom: 2vh !important;
   }
   .imageModal {
-      height: 80vh !important;;
-      width: 40vw !important;;
+      height: 80vh !important;
+      width: 40vw !important;
+      margin-top: 0;
   }
 
   .scrollup{
