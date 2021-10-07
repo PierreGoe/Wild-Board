@@ -216,7 +216,7 @@ function creatModalContent(id) {
     UserInfoInModal.appendChild(hobbyUser);
     // skills User
     const skillsUser = document.createElement("p");
-    skillsUser.innerHTML = `<span class = titleAnswer>Compétance </span>${wildersInfos[id].skills}`;
+    skillsUser.innerHTML = `<span class = titleAnswer>Compétences </span>${wildersInfos[id].skills}`;
     UserInfoInModal.appendChild(skillsUser);
     // motivation User
     const motivationUser = document.createElement("p");
