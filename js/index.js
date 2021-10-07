@@ -94,7 +94,7 @@ function createWildersCard(name, id) {
 
 
   const githubLink = document.createElement("a");
-  githubLink.setAttribute("href", "http://google.com");
+  githubLink.setAttribute("href", wildersInfos[id].social.gitHub);
   icones.appendChild(githubLink);
 
   const gitHubLogo = document.createElement("img");
@@ -105,7 +105,7 @@ function createWildersCard(name, id) {
   githubLink.appendChild(gitHubLogo);
 
   const linkedinLink = document.createElement("a");
-  linkedinLink.setAttribute("href", "http://google.com");
+  linkedinLink.setAttribute("href", wildersInfos[id].social.linkedin);
   icones.appendChild(linkedinLink);
   const linkedinLogo = document.createElement("img");
   linkedinLogo.setAttribute(
@@ -115,7 +115,7 @@ function createWildersCard(name, id) {
 
   linkedinLink.appendChild(linkedinLogo);
   const cvLink = document.createElement("a");
-  cvLink.setAttribute("href", "http://google.com");
+  cvLink.setAttribute("href", wildersInfos[id].social.cvUser);
   icones.appendChild(cvLink);
   const cvLogo = document.createElement("img");
   cvLogo.setAttribute(
