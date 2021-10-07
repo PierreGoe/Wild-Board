@@ -292,4 +292,26 @@ btnFlame.addEventListener('click', function() {
         alldiv[i].style.backgroundImage = `url('https://c.tenor.com/jnyLvpwBKOUAAAAi/fireplace-fire.gif')`;
     }
 
+<<<<<<< HEAD
 })
+=======
+})
+
+
+
+// fontion pour faire disparaitre le button
+
+window.addEventListener("scroll", ()=>{
+  console.log(window.scrollY)
+  console.log(window.innerWidth)
+  if ((window.scrollY <= 610 && window.innerWidth <= 400) || window.innerWidth >=400 ) {
+    document.querySelector(".scrollup").style.display = "none"
+  }
+  else{
+    document.querySelector(".scrollup").style.display = "block"
+  }
+})
+
+
+
+>>>>>>> pierre-develop
