@@ -292,9 +292,6 @@ btnFlame.addEventListener('click', function() {
         alldiv[i].style.backgroundImage = `url('https://c.tenor.com/jnyLvpwBKOUAAAAi/fireplace-fire.gif')`;
     }
 
-<<<<<<< HEAD
-})
-=======
 })
 
 
@@ -314,4 +311,3 @@ window.addEventListener("scroll", ()=>{
 
 
 
->>>>>>> pierre-develop
