@@ -300,7 +300,7 @@ btnFlame.addEventListener('click', function() {
 // fontion pour faire disparaitre le button
 
 window.addEventListener("scroll", ()=>{
-  if ((window.scrollY <= 610 && window.innerWidth <= 400) || window.innerWidth >=400 ) {
+  if ((window.scrollY <= 610 && window.innerWidth <= 480) || window.innerWidth >=480 ) {
     document.querySelector(".scrollup").style.display = "none"
   }
   else{
