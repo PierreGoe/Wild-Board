@@ -590,7 +590,7 @@ header {
 
 /* Media queries */
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 480px) {
   /* Desktop mode */
   .card-container {
       flex-flow: row wrap;
