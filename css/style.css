@@ -1,318 +1,311 @@
 :root {
-    --radiusCard: 5%;
-    --colorWildCodeSchool: #f76c6c;
-    --varela: 'Varela Round', sans-serif;
-    --raleway: 'Raleway', sans-serif;
+  --radiusCard: 5%;
+  --colorWildCodeSchool: #f76c6c;
+  --varela: 'Varela Round', sans-serif;
+  --raleway: 'Raleway', sans-serif;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-p, h2 {
-    padding: 0 10px;
+p,
+h2 {
+  padding: 0 10px;
 }
 
-p{
-    font-family: var(--varela);
-    text-align: center;
+p {
+  font-family: var(--varela);
+  text-align: center;
 }
 
-h1, h2{
-    font-family: var(--raleway);
+h1,
+h2 {
+  font-family: var(--raleway);
 }
 
 .about-title {
-    background: var(--colorWildCodeSchool);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 700;
-    font-size: 25px;
-    text-align: center;
-    margin-top: 20px;
-    
-   
+  background: var(--colorWildCodeSchool);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.about-paragraph {
+  max-width: 60vw;
 }
 
 footer {
-    height: 10vh;
-    background-color: #f76c6c;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 10px;
+  height: 10vh;
+  background-color: #f76c6c;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
 }
 
 .card {
-    height: 300px;
-    width: 200px;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: all 0.8s ease;
-    margin-top: 30px;
-    align-content: space-between;
-    margin: auto;
-    margin-top: 3em;
-    font-weight: bolder;
-    bottom: 0;
+  height: 300px;
+  width: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  margin-top: 30px;
+  align-content: space-between;
+  margin: auto;
+  margin-top: 3em;
+  font-weight: bolder;
+  bottom: 0;
 }
 
 .card h2 {
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card:hover {
-    bottom: 10px;
+  bottom: 10px;
 }
 
 .front {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    text-align: center;
-    background-color: white;
-    transform: rotateY(180deg);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  text-align: center;
+  background-color: white;
+  transform: rotateY(180deg);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .back-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 85%;
-    width: 85%;
-    border: 5px solid #f76c6c;
-    border-radius: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 85%;
+  width: 85%;
+  border: 5px solid #f76c6c;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .icones-container {
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .flipCard {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 header {
-    height: 15vh;
-    background-color: #f76c6c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 15vh;
+  background-color: #f76c6c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
 h1 {
-    color: #ffffff;
-    font-style: normal;
-    font-size: 36px;
-    line-height: 42px;
-    /* text-align: center; */
+  color: #ffffff;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 42px;
+  /* text-align: center; */
 }
 
 .logo {
-    height: 100%;
+  height: 100%;
 }
 
 .card-container {
-    display: flex;
-    align-items: center;
-    align-content: space-between;
-    flex-flow: column nowrap;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  flex-flow: column nowrap;
 }
 
-
-
 .pictureProfil {
-    width: 200px;
-    height: 80%;
-    object-fit: cover;
-    border-radius: var(--radiusCard) var(--radiusCard) 0 0;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));  
+  width: 200px;
+  height: 80%;
+  object-fit: cover;
+  border-radius: var(--radiusCard) var(--radiusCard) 0 0;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .front,
 .card,
 .back {
-    border-radius: var(--radiusCard);
+  border-radius: var(--radiusCard);
 }
 
-
 button {
-    background-color: rgba(255, 255, 255, 0);
-    border-radius: 50%;
-    z-index: 1;
-    
-    width: 60px;
-    z-index: 10;
-    cursor: not-allowed;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50%;
+  z-index: 1;
 
-    /* reset buton */
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    
+  width: 60px;
+  z-index: 10;
+  cursor: not-allowed;
+
+  /* reset buton */
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
 }
 
 .btnProfile {
-    background-color: #f76c6c;
-    border: 1px solid #f76c6c;
-    width: 70%;
-    border-radius: 25px;
-    padding: 20px;
-    margin-bottom: 15px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
+  background-color: #f76c6c;
+  border: 1px solid #f76c6c;
+  width: 70%;
+  border-radius: 25px;
+  padding: 20px;
+  margin-bottom: 15px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
 }
 
 .btnProfile:hover {
-    background-color: rgb(219, 87, 87);
-    cursor: pointer;
-
+  background-color: rgb(219, 87, 87);
+  cursor: pointer;
 }
 
 .modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: white/* Fallback color */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: white; /* Fallback color */
 }
-
 
 /* Modal Content/Box */
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    z-index: 2;
-    /* Could be more or less, depending on screen size */
-
-    
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  z-index: 2;
+  /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
 
 .close {
-    color: var(--colorWildCodeSchool);
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: var(--colorWildCodeSchool);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .imageModal {
-    height: 200px;
-    width: 200px;
-    margin: 0 auto ;
-    background-size: cover;
-    border-radius: 30%;
-    border-color: var(--colorWildCodeSchool);
-    background-position: center;
-    border: 8px solid #F77B7B;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    stroke-linecap: round;
-    margin-top: 4vh;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  background-size: cover;
+  border-radius: 30%;
+  border-color: var(--colorWildCodeSchool);
+  background-position: center;
+  border: 8px solid #f77b7b;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  stroke-linecap: round;
+  margin-top: 4vh;
 }
 
 footer {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
-.modalContent{
-    text-align: center;   
-    align-items: center;
-    background-image: url("../source/image/wcsTransparent.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
+.modalContent {
+  text-align: center;
+  align-items: center;
+  background-image: url('../source/image/wcsTransparent.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
 }
 
-.modalContent p{
-    padding-left: auto;
+.modalContent p {
+  padding-left: auto;
 }
-.modalContent a{
-    text-align: center;
-    justify-content: center;
-}
-
-.modalUserInfos{
-    width: 50vw;
-    margin: auto;
-    padding-bottom: 2vh;
+.modalContent a {
+  text-align: center;
+  justify-content: center;
 }
 
-.titleAnswer{
-    font-weight: bold;
-    color: var(--colorWildCodeSchool);
-    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
-    font-size: 3vh; 
-    padding-bottom: 1vh;
+.modalUserInfos {
+  width: 50vw;
+  margin: auto;
+  padding-bottom: 2vh;
 }
 
-.modalContent h2 , .modalContent p{
-    font-size: 2vh;
-    display: flex;
-    flex-direction: column;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+.titleAnswer {
+  font-weight: bold;
+  color: var(--colorWildCodeSchool);
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+  font-size: 3vh;
+  padding-bottom: 1vh;
+}
+
+.modalContent h2,
+.modalContent p {
+  font-size: 2vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
 }
 
 /* Layout  */
@@ -332,8 +325,6 @@ header {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  
-
 }
 
 .wild-student-container {
@@ -432,7 +423,7 @@ header {
   animation-timing-function: ease-out;
 }
 
-.scrollup{
+.scrollup {
   position: fixed;
   bottom: 5%;
   right: 5%;
@@ -453,10 +444,6 @@ header {
   border: 1px black solid;
 } */
 
-
-
-
-
 .flexbox {
   width: 100%;
   height: 100%;
@@ -469,8 +456,6 @@ header {
   margin: 20px;
 }
 
-
-
 .search {
   display: inline-block;
   position: relative;
@@ -478,7 +463,7 @@ header {
 }
 
 .search:after {
-  content: "";
+  content: '';
   background: var(--colorWildCodeSchool);
   width: 4px;
   height: 20px;
@@ -488,7 +473,7 @@ header {
   transform: rotate(135deg);
 }
 
-.search> input {
+.search > input {
   color: var(--colorWildCodeSchool);
   font-size: 16px;
   background: transparent;
@@ -501,13 +486,13 @@ header {
   transition: width 0.5s;
 }
 
-.search> input::placeholder {
+.search > input::placeholder {
   color: var(--colorWildCodeSchool);
   opacity: 0;
   transition: opacity 150ms ease-out;
 }
 
-.search> input:focus::placeholder {
+.search > input:focus::placeholder {
   opacity: 1;
 }
 
@@ -515,10 +500,6 @@ header {
 .search > input:not(:placeholder-shown) {
   width: 250px;
 }
-
-
-
-
 
 @keyframes moveInLeft {
   0% {
@@ -550,7 +531,7 @@ header {
     opacity: 1;
     transform: translate(0);
   }
-} 
+}
 
 @keyframes moveInRight {
   0% {
@@ -569,8 +550,6 @@ header {
 }
 
 /* Media queries */
-
-
 
 @keyframes moveInRight {
   0% {
@@ -593,30 +572,30 @@ header {
 @media screen and (min-width: 480px) {
   /* Desktop mode */
   .card-container {
-      flex-flow: row wrap;
+    flex-flow: row wrap;
   }
-  .modalContent{
-      display: flex;
-      flex-direction: row;
+  .modalContent {
+    display: flex;
+    flex-direction: row;
   }
-  .modalContent h2 , .modalContent p{
-      display: flex;
-      flex-direction: column;
-      margin-top: 2vh !important;
-      margin-bottom: 2vh !important;
+  .modalContent h2,
+  .modalContent p {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh !important;
+    margin-bottom: 2vh !important;
   }
   .imageModal {
-      height: 80vh !important;
-      width: 40vw !important;
-      margin-top: 0;
+    height: 80vh !important;
+    width: 40vw !important;
+    margin-top: 0;
   }
 
-  .scrollup{
+  .scrollup {
     display: none;
   }
 
-  h1{
-      font-size: 45px;
+  h1 {
+    font-size: 45px;
   }
-
 }
